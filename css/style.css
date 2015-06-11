@@ -1604,4 +1604,20 @@ footer form {
     background-repeat: no-repeat;
     margin-bottom: 20px; }
 
+.resourceMenu a {
+  text-decoration: none; }
+.resourceMenu span {
+  color: #62a426;
+  display: block;
+  cursor: pointer; }
+.resourceMenu p {
+  color: #000;
+  display: block; }
+
+#caseStudySub {
+  display: none; }
+
+#researchSub {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */

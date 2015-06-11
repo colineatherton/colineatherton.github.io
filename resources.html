@@ -8,7 +8,6 @@
     <title>EnergyDeck - Resources</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery-ui.css">
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,13 +31,13 @@
           <ul class="nav navbar-nav pull-right navbar-right navbar-logInSm visible-xs">
             <li><a href="#">Log in</a></li>
           </ul>
-          <button type="button" class="btn btn-success navbar-btn pull-right navbar-right navbar-signUp2 visible-xs">Sign Up</button>
+          <a href="pricing.html"><button type="button" class="btn btn-success navbar-btn pull-right navbar-right navbar-signUp2 visible-xs">Sign Up</button></a>
         </div>    
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!--nav Collapse menu-->
           <ul class="nav navbar-nav navbar-right navbar-logIn">
             <li><a href="#">Log in</a></li>
           </ul>
-          <button type="button" class="btn btn-success navbar-btn navbar-right navbar-signUp">Sign Up</button>
+          <a href="pricing.html"><button type="button" class="btn btn-success navbar-btn navbar-right navbar-signUp">Sign Up</button></a>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="benefits.html">Benefits</a></li>
             <li><a href="pricing.html">Pricing</a></li>
@@ -67,93 +66,66 @@
     <div class="container-fluid resources">
       <div class="container">
         <div class="row">
-          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-
-            <div id="accordion">
-  <h3>Section 1</h3>
-  <div>
-    <p>
-    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-    </p>
-  </div>
-  <h3>Section 2</h3>
-  <div>
-    <p>
-    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-    suscipit faucibus urna.
-    </p>
-  </div>
-  <h3>Section 3</h3>
-  <div>
-    <p>
-    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-    </p>
-    <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-    </ul>
-  </div>
-  <h3>Section 4</h3>
-  <div>
-    <p>
-    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-    mauris vel est.
-    </p>
-    <p>
-    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-    inceptos himenaeos.
-    </p>
-  </div>
-</div>
-
-
+          <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 resourceMenu">
             <hr>
-            <a href="#caseStudies" aria-controls="caseStudies" role="tab" data-toggle="tab">
-              <span>Case Studies</span>
+            <span id="caseStudies">Case Studies</span>
+              <div id="caseStudySub">
+                <a href="#caseStudy1" aria-controls="caseStudy1" role="tab" data-toggle="tab">
+                  <p>Case Study 1</p>
+                </a>
+                <a href="#caseStudy2" aria-controls="caseStudy2" role="tab" data-toggle="tab">
+                  <p>Case Study 2</p>
+                </a>
+              </div>
+            <hr>
+            <a href="#demos" aria-controls="demos" role="tab" data-toggle="tab">
+              <span class="menuOther">Platform Demos</span>
             </a>
             <hr>
             <a href="#GRESB" aria-controls="GRESB" role="tab" data-toggle="tab">
-              <span>GRESB</span>
+              <span class="menuOther">GRESB</span>
             </a>
             <hr>
             <a href="#carbonFootprint" aria-controls="carbonFootprint" role="tab" data-toggle="tab">
-              <span>Carbon Footprint</span>
+              <span class="menuOther">Carbon Footprint</span>
             </a>
             <hr>
             <a href="#sustainability" aria-controls="sustainability" role="tab" data-toggle="tab">
-              <span>Sustainability</span>
+              <span class="menuOther">Sustainability</span>
             </a>
             <hr>
-            <a href="#RandD" aria-controls="RandD" role="tab" data-toggle="tab">
-              <span>Research & Development</span>
-            </a>
+            <span id="research">Research & Development</span>
+              <div id="researchSub">
+                <a href="#RandD1" aria-controls="RandD1" role="tab" data-toggle="tab">
+                  <p>R&D 1</p>
+                </a>
+                <a href="#RandD2" aria-controls="RandD2" role="tab" data-toggle="tab">
+                  <p>R&D 2</p>
+                </a>
+              </div>
             <hr>
             <a href="#metering" aria-controls="metering" role="tab" data-toggle="tab">
-              <span>Metering</span>
+              <span class="menuOther">Metering</span>
             </a>
             <hr>
             <a href="#blog" aria-controls="blog" role="tab" data-toggle="tab">
-              <span>Blog</span>
+              <span class="menuOther">Blog</span>
             </a>
             <hr>
           </div>
           <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
             <div class="tab-content">
-              <div role="tabpanel" class="tab-pane active" id="caseStudies">
+              <div role="tabpanel" class="tab-pane active" id="caseStudy1">
               <hr>
-                Opens up a submenu of available case studies within original menu. When the page loads, the best of those case studies is displayed as though it was selected from that sub menu.
+                Case Study 1.
+              </div>
+              <div role="tabpanel" class="tab-pane" id="caseStudy2">
+              <hr>
+                Case Study 2.
+              </div>
+              <div role="tabpanel" class="tab-pane" id="demos">
+              <hr>
+                A selection of videos, to demo the platform
               </div>
               <div role="tabpanel" class="tab-pane" id="GRESB">
               <hr>
@@ -167,9 +139,13 @@
               <hr>
                 Nice featured article about Sustainability, what it means, what the risks are, what to do. How EnergyDeck can help... Link at bottom to features and any relevent case studies.
               </div>
-              <div role="tabpanel" class="tab-pane" id="RandD">
+              <div role="tabpanel" class="tab-pane" id="RandD1">
               <hr>
-                Opens up a submenu of available R and D projects within original menu.
+                Research and Development Project 1.
+              </div>
+              <div role="tabpanel" class="tab-pane" id="RandD2">
+              <hr>
+                Research and Development Project 2.
               </div>
               <div role="tabpanel" class="tab-pane" id="metering">
               <hr>
@@ -282,13 +258,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $( "#accordion" ).accordion({
-        collapsible: true
-      });
-      });
-  </script>
+    <script src="js/resource.js"></script>
+    <script src="js/demo.js"></script>
+    
   </body>
 </html>
