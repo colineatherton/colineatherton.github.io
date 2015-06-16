@@ -19,6 +19,7 @@
           $(".circletag2, .circletag3, .circletag4").removeClass("circletag2Select circletag3Select circletag4Select");
         } else if (currentIndex == 1) {
           $(".circletag2").addClass("circletag2Select");
+          $(".circletag1").addClass("circletag1");
           $(".circletag1, .circletag3, .circletag4").removeClass("circletag1Select circletag3Select circletag4Select");
         } else if (currentIndex == 2) {
           $(".circletag3").addClass("circletag3Select");

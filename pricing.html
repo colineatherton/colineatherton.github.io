@@ -225,17 +225,17 @@
                 <h1>Choose additional requirements</h1>
                 <form role="form">
                   <div class="form-group">
-                    <label for="sites"><h2>How many sites do you want to manage?</h2></label>
-                    <input type="text" class="form-control" id="sites"><h2>=</h2> <h2>Sites Total</h2>
+                    <label for="sites"><h2 data-toggle="tooltip" title="A site is a building you want to monitor">How many sites do you want to manage?</h2></label>
+                    <input type="text" class="form-control" id="sites" onblur="getSites()"><h2>=</h2> <h2 id="costSites">Sites Total</h2>
                   </div>
                   <div class="form-group">
-                    <label for="feeds"><h2>How many additional data feeds do you want to use?</h2></label>
-                    <input type="text" class="form-control" id="feeds"><h2>=</h2><h2>Feeds Total</h2>
+                    <label for="feeds"><h2 data-toggle="tooltip" title="A ‘Data Feed’ refers to an input source for any type of data, whether it be consumption, generation, environmental, production, utilisation… if you can send us data, we’ll figure out how to take it and relate it to the built environment.">How many data feeds do you want to use in total?</h2></label>
+                    <input type="text" class="form-control" id="feeds" onblur="getFeeds()"><h2>=</h2><h2 id="costFeeds">Feeds Total</h2>
                   </div>
                   <h2>Do you want us to set up your sites?</h2>
-                  <label class="radio-inline"><input type="radio" name="setUp">Yes</label>
-                  <label class="radio-inline"><input type="radio" name="setUp">No</label>
-                  <h2>Set Up Total</h2>
+                  <label class="radio-inline"><input type="radio" name="setUp" id="option1" onclick="getSetup();">Yes</label>
+                  <label class="radio-inline"><input type="radio" name="setUp" id="option2" onclick="getSetup();">No</label>
+                  <h2 id="costSetup">Set Up Total</h2>
                   <hr>
                   <div class="circlePricing">
                     3
@@ -251,24 +251,30 @@
                     <input type="text" class="form-control customer" id="lastName" placeholder="Last Name">
                     <input type="text" class="form-control customer" id="companyName" placeholder="Company Name">
                   </div>
-                  <button type="submit" class="btn btn-success">Start Trial</button>
+                  <h2 id="noTick">this should change</h2>
+                  <button class="btn btn-success" onclick="planUnderstood()">Start Trial</button><!--removed from btn 
+                type="submit" -->
                 </form>
               </div>
               <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                 <div class="calculator">
                   <h1>Current Plan</h1>
-                  <span>Sites:<p>total</p></span>
-                  <span>Data Feeds:<p>total</p></span>
-                  <span>Set Up:<p>total</p></span>
+                  <span>Sites:<p id="totalSites">total</p></span>
+                  <span>Data Feeds:<p id="totalFeeds">total</p></span>
+                  <span>Set Up:<p id="setUp_yesNo">total</p></span>
                   <span>Features:</span>
-                  <p>9 Free Main Meters</p>
+                  <p><span id="free">0</span> Free Main Meters</p>
                   <p>Unlimited Users</p>
                   <p>Unlimited Historical Data</p>
                   <p>Unlimited Platform Access</p>
                   <p>30 Day Free Trial</p>
-                  <span>Price:<p>total</p><p>set up</p></span>
+                  <span>Price:<p id="grandTotal">total</p></span>
+                  <span>One Off Set Up Cost:<p id="setUpTotal">total</p></span>
                   <span>*Only applicable after FREE 30 day, no obligation trial</span>
-                </div>
+                  <div class="checkbox">
+                  <label><input type="checkbox" id="understood" value="">I understand my price plan</label>
+                  </div>
+                </div><!--/calculator-->
               </div>
             </div><!--END OF ROW CONTAINER-->
           </div>
@@ -318,9 +324,9 @@
               <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                   <h1>tel:</h1>
-                  <h1>+44 203 108 9365</h1>
+                  <h1><a href="tel:442031089365">+44 203 108 9365</a></h1>
                   <h1>email:</h1>
-                  <h1>info@energydeck.com</h1>
+                  <h1><a href="mailto:info@energydeck.com">info@energydeck.com</a></h1>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -370,36 +376,36 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footerBrand">
-          <img src="img/footer/EnergyDeck.png" width="100%" height="auto">
+          <a href="index.html"><img src="img/footer/EnergyDeck.png" width="100%" height="auto"></a>
           <p>everything you need to optimise your energy</p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 footerMenuLinks">
           <ul>
-            <li>Home</li>
-            <li>Benefits</li>
-            <li>Pricing</li>
-            <li>Resources</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 footerCTALinks">
           <ul>
             <li>Residential:
-            <span>Sign Up Free</span></li>
+            <span><a href="pricing.html#residential">Sign Up Free</a></span></li>
             <li>Enterprise:
-            <span>Free Trial</span></li>
+            <span><a href="pricing.html#enterprise">Free Trial</a></span></li>
             <li>Service Providers:
-            <span>Contact Us</span></li>
+            <span><a href="pricing.html#serviceProviders">Contact Us</a></span></li>
           </ul>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footerContact">
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footerContact">
-              <img src="img/footer/phone.png" width="45" height="45" id="phone">
+              <a href="tel:442031089365"><img src="img/footer/phone.png" width="45" height="45" id="phone"></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 footerContact">
-              <p>+44 203 108 9365</p>
+              <p><a href="tel:442031089365">+44 203 108 9365</a></p>
             </div>
           </div>
           <div class="row">
@@ -416,10 +422,10 @@
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footerContact">
-              <img src="img/footer/email.png" width="45" height="45" id="email">
+              <a href="mailto: info@energydeck.com"><img src="img/footer/email.png" width="45" height="45" id="email"></a>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 footerContact">
-              <p id="emailText">info@energdeck.com</p>
+              <p id="emailText"><a href="mailto: info@energydeck.com">info@energdeck.com</a></p>
             </div>
           </div>
           <div class="row">
@@ -438,10 +444,10 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 footerSocial">
-          <img src="img/footer/twitter.png" width="65" height="65">
-          <img src="img/footer/linkedin.png" width="65" height="65">
-          <img src="img/footer/googleplus.png" width="65" height="65">
-          <img src="img/footer/facebook.png" width="65" height="65">
+          <a href="https://twitter.com/energydeck" target="_blank"><img src="img/footer/twitter.png" width="65" height="65"></a>
+          <a href="https://www.linkedin.com/company/energydeck" target="_blank"><img src="img/footer/linkedin.png" width="65" height="65"></a>
+          <a href="https://plus.google.com/+Energydeck/videos" target="_blank"><img src="img/footer/googleplus.png" width="65" height="65"></a>
+          <a href="https://www.facebook.com/EnergyDeck" target="_blank"><img src="img/footer/facebook.png" width="65" height="65"></a>
         </div>
       </div>
     </div>
@@ -472,6 +478,12 @@
 
     });
   </script>
+  <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
   <script src="js/whatPage.js"></script>
+  <script src="js/calculator.js"></script>
   </body>
 </html>

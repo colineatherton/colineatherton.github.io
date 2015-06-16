@@ -1,7 +1,7 @@
 //Variables
 //------------------------------------------------------
 //Spacing
-$sectionPadding: 50px;
+$sectionPadding: 20px;
 //------------------------------------------------------
 //Fonts
 @font-face {
@@ -74,7 +74,7 @@ html { -webkit-font-smoothing: antialiased; }
 
 //TOP BANNER//////////////////////////////////////	
 .topBanner {
-	height: auto;
+	min-height: auto;
 	//background: url(../img/banner4.png) no-repeat center center fixed; 
 	//background: url(../img/bannerNoBlue.png) no-repeat center center fixed; 
 	background: url(../img/banner6.jpg) no-repeat center center fixed; 
@@ -89,7 +89,9 @@ html { -webkit-font-smoothing: antialiased; }
   		h1 {
   			color: #e5e5e5;
 			//font-family: 'Open Sans', sans-serif;
-			font-family: helveticaLight;
+			//font-family: helveticaLight;
+			font-family: 'Roboto Slab', serif;
+			font-weight: 700;
 			//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 			font-size: 2em;
 			line-height: 40px;
@@ -102,6 +104,8 @@ html { -webkit-font-smoothing: antialiased; }
 				color: #fff;
 				//font-family: 'Open Sans', sans-serif;
 				font-family: helveticaThin;
+				//font-family: 'Roboto', sans-serif;
+				//font-weight: 100;
 				//font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    				//font-weight: 300;
 				font-size: 6.2em;
@@ -191,7 +195,7 @@ html { -webkit-font-smoothing: antialiased; }
 							height: 0;
 							border-left: 30px solid transparent;
 							border-right: 30px solid transparent;
-							border-top: 40px solid #54abc7;
+							border-top: 40px solid #3d9cbc;
 							}
 						.triangleInner {
 							display: block;
@@ -212,42 +216,43 @@ html { -webkit-font-smoothing: antialiased; }
 		background-color: transparent;
 		height: 2px;
 		border-top-style: dashed;
-		border-top-color: #54abc7;
+		border-top-color: #3d9cbc;
 		border-top-width: 2px;
 		position: relative;
-		top: 135px;
+		top: 95px;
 		width: 80%;
 		margin: 0 auto;
 
 	}
 	.featuresInner {
 		h1{
-			font-size: 1.5em;
+			font-size: 1.2em;
 			text-align: center;
 			font-family: helveticaRegular;
 			//font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-			color: #54abc7;
-			margin-bottom: 30px;
+			color: #3d9cbc;
+			margin-bottom: 15px;
 		}
 		h2{
-			margin-top: 30px;
-			font-size: 1em;
+			margin-top: 15px;
+			font-size: .9em;
 			text-align: center;
 			font-family: helveticaLight;
 			//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 			padding-left: 20px;
 			padding-right: 20px;
+			color: #333;
 		}
 	.circletag1 {
 	    display: block;
-	    width: 120px;
-	    height: 120px;
-	    background: #54abc7;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    width: 80px;
+	    height: 80px;
+	    background: #3d9cbc;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/onePlatform.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
@@ -256,28 +261,28 @@ html { -webkit-font-smoothing: antialiased; }
 		}
 	.circletag1:hover {
 		background: #ffffff;
-		-moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+		-moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 		background-image: url(../img/onePlatformSelect.png);
-		background-size: 85px 85px;
+		background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: 1s;
-	    -mox-box-shadow: 0px 0px 1px 3px #54abc7;
-    -webkit-box-shadow: 0px 0px 1px 3px #54abc7;
-    box-shadow: 0px 0px 1px 3px #54abc7;
+	    -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    box-shadow: 0px 0px 1px 2px #3d9cbc;
 	}
 	.circletag2 {
 	    display: block;
-	    width: 120px;
-	    height: 120px;
-	    background: #54abc7;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    width: 80px;
+	    height: 80px;
+	    background: #3d9cbc;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/flexibleReporting.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;   
 	    margin: 0 auto;
@@ -286,28 +291,28 @@ html { -webkit-font-smoothing: antialiased; }
 		}
 	.circletag2:hover {
 		background: #ffffff;
-		-moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+		-moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 		background-image: url(../img/flexibleReportingSelect.png);
-		background-size: 85px 85px;
+		background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: 1s;
-	    -mox-box-shadow: 0px 0px 1px 3px #54abc7;
-    -webkit-box-shadow: 0px 0px 1px 3px #54abc7;
-    box-shadow: 0px 0px 1px 3px #54abc7;
+	    -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    box-shadow: 0px 0px 1px 2px #3d9cbc;
 	}
 	.circletag3 {
 	    display: block;
-	    width: 120px;
-	    height: 120px;
-	    background: #54abc7;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    width: 80px;
+	    height: 80px;
+	    background: #3d9cbc;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/analytics.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;    
 	    margin: 0 auto;
@@ -316,28 +321,28 @@ html { -webkit-font-smoothing: antialiased; }
 		}
 	.circletag3:hover {
 		background: #ffffff;
-		-moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+		-moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 		background-image: url(../img/analyticsSelect.png);
-		background-size: 85px 85px;
+		background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: 1s;
-	    -mox-box-shadow: 0px 0px 1px 3px #54abc7;
-    -webkit-box-shadow: 0px 0px 1px 3px #54abc7;
-    box-shadow: 0px 0px 1px 3px #54abc7;
+	    -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    box-shadow: 0px 0px 1px 2px #3d9cbc;
 	}
 	.circletag4 {
 	    display: block;
-	    width: 120px;
-	    height: 120px;
-	    background: #54abc7;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    width: 80px;
+	    height: 80px;
+	    background: #3d9cbc;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/projectTracking.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;    
 	    margin: 0 auto;
@@ -346,128 +351,108 @@ html { -webkit-font-smoothing: antialiased; }
 		}
 		.circletag4:hover {
 		background: #ffffff;
-		-moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+		-moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 		background-image: url(../img/projectTrackingSelect.png);
-		background-size: 85px 85px;
+		background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: 1s;
-	    -mox-box-shadow: 0px 0px 1px 3px #54abc7;
-    -webkit-box-shadow: 0px 0px 1px 3px #54abc7;
-    box-shadow: 0px 0px 1px 3px #54abc7;
+	    -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    box-shadow: 0px 0px 1px 2px #3d9cbc;
 		}
-	/*.circletag4:hover {
-		background: #26b5e3;
-		-moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
-		background-image: url(../img/projectTracking.png);
-		background-size: 85px 85px;
-	    background-position:50% 50%;
-	    background-repeat:no-repeat;
-	    margin: 0 auto;
-	    cursor: pointer;
-	    transition-duration: 1s;
-		}*/
 			.circletag1Select {
 	    display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #FFFFFF;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/onePlatformSelect.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: .75s;
-	        -mox-box-shadow: 0px 0px 1px 3px #54abc7;
-    -webkit-box-shadow: 0px 0px 1px 3px #54abc7;
-    box-shadow: 0px 0px 1px 3px #54abc7;
-	    //border-style: solid;
-	    //border-width: 2px;
-	    //border-color: #54abc7;
+	        -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    box-shadow: 0px 0px 1px 2px #3d9cbc;
+
 		}
 			.circletag2Select {
 	    display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #FFFFFF;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/flexibleReportingSelect.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: .75s;
-	    	        -mox-box-shadow: 0px 0px 1px 3px #54abc7;
-    -webkit-box-shadow: 0px 0px 1px 3px #54abc7;
-    box-shadow: 0px 0px 1px 3px #54abc7;
-	    //border-style: solid;
-	    //border-width: 2px;
-	    //border-color: #54abc7;
+	    	        -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    box-shadow: 0px 0px 1px 2px #3d9cbc;
+
 		}
 			.circletag3Select {
 	    display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #FFFFFF;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/analyticsSelect.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: .75s;
-	    	        -mox-box-shadow: 0px 0px 1px 3px #54abc7;
-    -webkit-box-shadow: 0px 0px 1px 3px #54abc7;
-    box-shadow: 0px 0px 1px 3px #54abc7;
-	    //border-style: solid;
-	    //border-width: 2px;
-	    //border-color: #54abc7;
+	    	        -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    box-shadow: 0px 0px 1px 2px #3d9cbc;
+
 		}
 			.circletag4Select {
 	    display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #FFFFFF;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/projectTrackingSelect.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: .75s;
-	    	        -mox-box-shadow: 0px 0px 1px 3px #54abc7;
-    -webkit-box-shadow: 0px 0px 1px 3px #54abc7;
-    box-shadow: 0px 0px 1px 3px #54abc7;
-	    //border-style: solid;
-	    //border-width: 2px;
-	    //border-color: #54abc7;
+	    	        -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
+    box-shadow: 0px 0px 1px 2px #3d9cbc;
+
 		}
 	}
 	.carousel-control.left, .carousel-control.right {
     	background-image: none !important;
 	}
 	.featuresSlider {
-		padding-bottom: $sectionPadding;
+		padding-bottom: 30px;
 		.slider {
 			.slide {
 				.carousel-inner {
 					.item {
 						border-top-style: solid;
 						border-top-width: 4px;
-						border-top-color: #54abc7;
+						border-top-color: #3d9cbc;
 						background-color: #f7f7f7;
 						width: 100%;
 						height: 500px;
@@ -485,7 +470,6 @@ html { -webkit-font-smoothing: antialiased; }
 							p {
 								text-align: center;
 							}
-						//triangles used to go here
 
 						}
 					}
@@ -494,15 +478,222 @@ html { -webkit-font-smoothing: antialiased; }
 		}
 	}
 }
+
+//PROFILES//////////////////////////////////////////////
+.circletagResi {
+		    display: block;
+		    width: 100px;
+		    height: 100px;
+		    background: #3d9cbc;
+		    -moz-border-radius: 50px;
+		    -webkit-border-radius: 50px;
+		    background-image: url(../img/residential.png);
+		    background-size: 75px 75px;
+		    background-position:50% 50%;
+		    background-repeat:no-repeat;   
+		    margin: 0 auto;
+		    border-style: solid;
+		    border-width: 2px;
+		    border-color: #FFFFFF;
+		    transition-duration: 1s;
+		}
+		.circletagResi:hover {
+		    display: block;
+		    width: 100px;
+		    height: 100px;
+		    background: #26b5e3;
+		    -moz-border-radius: 50px;
+		    -webkit-border-radius: 50px;
+		    background-image: url(../img/residential.png);
+		    background-size: 75px 75px;
+		    background-position:50% 50%;
+		    background-repeat:no-repeat;   
+		    margin: 0 auto;
+		    border-style: solid;
+		    border-width: 2px;
+		    border-color: #FFFFFF;
+		    transition-duration: 1s;
+		}
+	.circletagBusi {
+		    display: block;
+		    width: 100px;
+		    height: 100px;
+		    background: #3d9cbc;
+		    -moz-border-radius: 50px;
+		    -webkit-border-radius: 50px;
+		    background-image: url(../img/enterprise.png);
+		    background-size: 75px 75px;
+		    background-position:50% 50%;
+		    background-repeat:no-repeat;    
+		    margin: 0 auto;
+		    border-style: solid;
+		    border-width: 2px;
+		    border-color: #FFFFFF;
+		    transition-duration: 1s;
+		}
+	.circletagBusi:hover {
+		    display: block;
+		    width: 100px;
+		    height: 100px;
+		    background: #26b5e3;
+		    -moz-border-radius: 50px;
+		    -webkit-border-radius: 50px;
+		    background-image: url(../img/enterprise.png);
+		    background-size: 75px 75px;
+		    background-position:50% 50%;
+		    background-repeat:no-repeat;   
+		    margin: 0 auto;
+		    border-style: solid;
+		    border-width: 2px;
+		    border-color: #FFFFFF;
+		    transition-duration: 1s;
+		}
+	.circletagSP {
+		    display: block;
+		    width: 100px;
+		    height: 100px;
+		    background: #3d9cbc;
+		    -moz-border-radius: 50px;
+		    -webkit-border-radius: 50px;
+		    background-image: url(../img/serviceProviders.png);
+		    background-size: 75px 75px;
+		    background-position:50% 50%;
+		    background-repeat:no-repeat;    
+		    margin: 0 auto;
+		    border-style: solid;
+		    border-width: 2px;
+		    border-color: #FFFFFF;
+		    transition-duration: 1s;
+		}
+	.circletagSP:hover {
+		    display: block;
+		    width: 100px;
+		    height: 100px;
+		    background: #26b5e3;
+		    -moz-border-radius: 50px;
+		    -webkit-border-radius: 50px;
+		    background-image: url(../img/serviceProviders.png);
+		    background-size: 75px 75px;
+		    background-position:50% 50%;
+		    background-repeat:no-repeat;   
+		    margin: 0 auto;
+		    border-style: solid;
+		    border-width: 2px;
+		    border-color: #FFFFFF;
+		    transition-duration: 1s;
+		}
+.profiles {
+	background-color: #3d9cbc;
+	padding-bottom: 60px;
+	h1 {
+		text-align: center;
+		font-size: 2em;
+		font-family: helveticaLight;
+		//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		color: #FFFFFF;
+		padding-bottom: 30px;
+		padding-top: $sectionPadding;
+	}
+	.right {
+	border-right: 1px solid #ccc;
+}
+hr {
+	margin-top: 50px;
+}
+.row {
+	padding: 0;
+	margin: 0;
+}
+	.profilesInner {
+		text-align: center;
+
+
+		h1{
+			font-size: 1.2em;
+			text-align: center;
+			font-family: helveticaRegular;
+			//font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+			color: #FFFFFF;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		h2{
+			margin-top: 15px;
+			font-size: 1em;
+			text-align: center;
+			font-family: helveticaLight;
+			//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+			color: #FFFFFF;
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+		.borderLeft {
+			border-left: 2px solid #d1d1d4;
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+}
+
+		.ghost-button-learn {
+	  		display: inline-block;
+	  		width: 150px;
+	  		padding: 8px;
+	  		margin-right: 50px;
+	  		color: #fff;
+	  		border: 2px solid #fff;
+	  		text-align: center;
+	  		outline: none;
+	  		text-decoration: none;
+	  		font-family: helveticaLight;
+	  		//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	  		font-size: 1.2em;
+	  		margin: 0 auto;
+	  		margin-top: 20px;
+	  		margin-bottom: 15px;
+	  		transition-duration: 1s;
+		}
+		.ghost-button-learn:hover {
+	  			background-color: #26b5e3;
+	  			transition-duration: 1s;
+			}
+		.ghost-button-go {
+	  		display: inline-block;
+	  		width: 150px;
+	  		padding: 8px;
+	  		margin-right: 50px;
+	  		color: #fff;
+	  		//background-color: #23f167; //BRIGHT GREEN
+	  		//background-color: #ff7636; //ORANGE
+	  		//background-color: #31b35c; //GREEN
+	  		background-color: #26b5e3;
+	  		border: 2px solid #fff;
+	  		text-align: center;
+	  		outline: none;
+	  		text-decoration: none;
+	  		font-family: helveticaLight;
+	  		//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	  		font-size: 1.2em;
+	  		margin: 0 auto;
+	  		margin-top: 20px;
+	  		transition-duration: 1s;
+		}
+		.ghost-button-go:hover {
+	  			background-color: #26e34e;
+	  			transition-duration: 1s;
+			}
+
+		
+	}
+}
 //ROI///////////////////////////////////////////////////
 
 .roi {
-	background-color: #cddbe0;
+	background-color: #fff;
 	padding-top: $sectionPadding;
 	padding-bottom: $sectionPadding;
 	h1 {
 		text-align: center;
-		font-size: 2.5em;
+		font-size: 2em;
 		font-family: helveticaLight;
 		//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 		color: #36393e;
@@ -526,7 +717,7 @@ html { -webkit-font-smoothing: antialiased; }
 		}
 		h1 {
 			text-align: center;
-			font-size: 1.5em;
+			font-size: 1.2em;
 			font-family: helveticaRegular;
 			//font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 			color: #36393e;
@@ -535,7 +726,7 @@ html { -webkit-font-smoothing: antialiased; }
 			text-align: center;
 			color: #36393e;
 			padding-bottom: 40px;
-			font-size: 1.5em;
+			font-size: 1em;
 			font-family: helveticaRegular;
 			//font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 			
@@ -565,16 +756,19 @@ html { -webkit-font-smoothing: antialiased; }
 		    background: #fff;
 		    -moz-border-radius: 75px;
 		    -webkit-border-radius: 75px;
+		   		    border-style: solid;
+		    border-width: 2px;
+		    border-color: #3d9cbc;
 		   text-align: center;
 		   line-height: 150px;
 		   font-size: 100px;
-		   color: #36393e;
+		   color: #3d9cbc;
 		    margin: 0 auto;
 		    margin-bottom: 20px;
 		}
 		h1 {
 			text-align: center;
-			font-size: 1.5em;
+			font-size: 1.2em;
 			font-family: helveticaRegular;
 			//font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 			
@@ -582,8 +776,8 @@ html { -webkit-font-smoothing: antialiased; }
 			padding: 0;
 			margin: 0;
 			padding-bottom: 10px;
-			padding-left: 20%;
-			padding-right: 20%;
+			padding-left: 30%;
+			padding-right: 30%;
 		}
 		h2 {
 			font-size: 1em;
@@ -600,212 +794,9 @@ html { -webkit-font-smoothing: antialiased; }
 	}
 
 }
-
-//PROFILES//////////////////////////////////////////////
-.circletagResi {// were all nested under profiles
-		    display: block;
-		    width: 150px;
-		    height: 150px;
-		    background: #54abc7;
-		    -moz-border-radius: 75px;
-		    -webkit-border-radius: 75px;
-		    background-image: url(../img/residential.png);
-		    background-size: 100px 100px;
-		    background-position:50% 50%;
-		    background-repeat:no-repeat;   
-		    margin: 0 auto;
-		    border-style: solid;
-		    border-width: 2px;
-		    border-color: #FFFFFF;
-		    transition-duration: 1s;
-		}
-		.circletagResi:hover {
-		    display: block;
-		    width: 150px;
-		    height: 150px;
-		    background: #26b5e3;
-		    -moz-border-radius: 75px;
-		    -webkit-border-radius: 75px;
-		    background-image: url(../img/residential.png);
-		    background-size: 100px 100px;
-		    background-position:50% 50%;
-		    background-repeat:no-repeat;   
-		    margin: 0 auto;
-		    border-style: solid;
-		    border-width: 2px;
-		    border-color: #FFFFFF;
-		    transition-duration: 1s;
-		}
-	.circletagBusi {
-		    display: block;
-		    width: 150px;
-		    height: 150px;
-		    background: #54abc7;
-		    -moz-border-radius: 75px;
-		    -webkit-border-radius: 75px;
-		    background-image: url(../img/enterprise.png);
-		    background-size: 100px 100px;
-		    background-position:50% 50%;
-		    background-repeat:no-repeat;    
-		    margin: 0 auto;
-		    border-style: solid;
-		    border-width: 2px;
-		    border-color: #FFFFFF;
-		    transition-duration: 1s;
-		}
-	.circletagBusi:hover {
-		    display: block;
-		    width: 150px;
-		    height: 150px;
-		    background: #26b5e3;
-		    -moz-border-radius: 75px;
-		    -webkit-border-radius: 75px;
-		    background-image: url(../img/enterprise.png);
-		    background-size: 100px 100px;
-		    background-position:50% 50%;
-		    background-repeat:no-repeat;   
-		    margin: 0 auto;
-		    border-style: solid;
-		    border-width: 2px;
-		    border-color: #FFFFFF;
-		    transition-duration: 1s;
-		}
-	.circletagSP {
-		    display: block;
-		    width: 150px;
-		    height: 150px;
-		    background: #54abc7;
-		    -moz-border-radius: 75px;
-		    -webkit-border-radius: 75px;
-		    background-image: url(../img/serviceProviders.png);
-		    background-size: 100px 100px;
-		    background-position:50% 50%;
-		    background-repeat:no-repeat;    
-		    margin: 0 auto;
-		    border-style: solid;
-		    border-width: 2px;
-		    border-color: #FFFFFF;
-		    transition-duration: 1s;
-		}
-	.circletagSP:hover {
-		    display: block;
-		    width: 150px;
-		    height: 150px;
-		    background: #26b5e3;
-		    -moz-border-radius: 75px;
-		    -webkit-border-radius: 75px;
-		    background-image: url(../img/serviceProviders.png);
-		    background-size: 100px 100px;
-		    background-position:50% 50%;
-		    background-repeat:no-repeat;   
-		    margin: 0 auto;
-		    border-style: solid;
-		    border-width: 2px;
-		    border-color: #FFFFFF;
-		    transition-duration: 1s;
-		}
-.profiles {
-	background-color: #54abc7;
-	padding-bottom: $sectionPadding;
-	h1 {
-		text-align: center;
-		font-size: 2.5em;
-		font-family: helveticaLight;
-		//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-		color: #FFFFFF;
-		padding-top: $sectionPadding;
-		padding-bottom: $sectionPadding;
-	}
-	.right {
-	border-right: 1px solid #ccc;
-}
-hr {
-	margin-top: 50px;
-}
-.row {
-	padding: 0;
-	margin: 0;
-}
-	.profilesInner {
-		text-align: center;
-
-		h1{
-			font-size: 1.5em;
-			text-align: center;
-			font-family: helveticaRegular;
-			//font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-			color: #FFFFFF;
-			padding-bottom: 20px;
-			padding-top: 20px;
-		}
-		h2{
-			margin-top: 30px;
-			font-size: 1.4em;
-			text-align: center;
-			font-family: helveticaLight;
-			//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-			color: #FFFFFF;
-			padding-left: 50px;
-			padding-right: 50px;
-		}
-		.borderLeft {
-			border-left: 2px solid #d1d1d4;
-  position: absolute;
-  top: 10%;
-  bottom: 10%;
-}
-
-		.ghost-button-learn {
-	  		display: inline-block;
-	  		width: 150px;
-	  		padding: 8px;
-	  		margin-right: 50px;
-	  		color: #fff;
-	  		border: 2px solid #fff;
-	  		text-align: center;
-	  		outline: none;
-	  		text-decoration: none;
-	  		font-family: helveticaLight;
-	  		//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	  		font-size: 1.2em;
-	  		margin: 0 auto;
-	  		margin-top: 20px;
-	  		transition-duration: 1s;
-		}
-		.ghost-button-learn:hover {
-	  			background-color: #26b5e3;
-	  			transition-duration: 1s;
-			}
-		.ghost-button-go {
-	  		display: inline-block;
-	  		width: 150px;
-	  		padding: 8px;
-	  		margin-right: 50px;
-	  		color: #fff;
-	  		//background-color: #23f167; BRIGHT GREEN
-	  		background-color: #ff7636; //ORANGE
-	  		//background-color: #31b35c; GREEN
-	  		border: 2px solid #fff;
-	  		text-align: center;
-	  		outline: none;
-	  		text-decoration: none;
-	  		font-family: helveticaLight;
-	  		//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	  		font-size: 1.2em;
-	  		margin: 0 auto;
-	  		margin-top: 20px;
-	  		transition-duration: 1s;
-		}
-		.ghost-button-go:hover {
-	  			background-color: #26e34e;
-	  			transition-duration: 1s;
-			}
-
-		
-	}
-}
 //CUSTOMERS/////////////////////////////////////////
 .customers {
+	background-color: #3d9cbc;
 	h1 {
 		text-align: center;
 		font-size: 2.5em;
@@ -1373,13 +1364,13 @@ cursor: default !important;
 	.circletag1:hover {
 		cursor: default !important;
 		 display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #26b5e3;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/onePlatform.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
@@ -1392,13 +1383,13 @@ cursor: default !important;
 	.circletag2:hover {
 				cursor: default !important;
 		 display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #26b5e3;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/flexibleReporting.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
@@ -1411,13 +1402,13 @@ cursor: default !important;
 	.circletag3:hover {
 				cursor: default !important;
 		 display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #26b5e3;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/analytics.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
@@ -1430,13 +1421,13 @@ cursor: default !important;
 		.circletag4:hover {
 				cursor: default !important;
 		 display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #26b5e3;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/projectTracking.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
@@ -1448,13 +1439,13 @@ cursor: default !important;
 		}
 		.circletag1Select {
 	    display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #54abc7;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/onePlatform.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
@@ -1466,13 +1457,13 @@ cursor: default !important;
 		}
 			.circletag2Select {
 	   	    display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #54abc7;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/flexibleReporting.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
@@ -1484,13 +1475,13 @@ cursor: default !important;
 		}
 			.circletag3Select {
 	   	    display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #54abc7;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/analytics.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
@@ -1502,13 +1493,13 @@ cursor: default !important;
 		}
 			.circletag4Select {
 	    	    display: block;
-	    width: 120px;
-	    height: 120px;
+	    width: 80px;
+	    height: 80px;
 	    background: #54abc7;
-	    -moz-border-radius: 60px;
-	    -webkit-border-radius: 60px;
+	    -moz-border-radius: 40px;
+	    -webkit-border-radius: 40px;
 	    background-image: url(../img/projectTracking.png);
-	    background-size: 85px 85px;
+	    background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
