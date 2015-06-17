@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/ionicons.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -125,7 +126,7 @@
           <div class="container pricingHeading">
             <div class="row">
               <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                <img src="img/residential.png" width="100" height="auto" class="benefitsIcon">
+                <img src="img/residential.png" width="60" height="auto">
               </div>
               <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11">
                 <h1>Set Up Your Residential Account</h1>
@@ -142,28 +143,27 @@
                 <h1>What you get for free</h1>
                 <h2>1 Property Fully Monitored</h2>
                 <h2>Unlimited Platform Access</h2>
-                <hr>
+                <hr class="pricing-hr">
                 <div class="circlePricing">
                   2
                 </div>
-                <h1>Enter your details</h1>
                 <form role="form">
                   <div class="form-group">
-                    <h1>Enter your details</h1>
-                    <input type="text" class="form-control customer" id="userName" placeholder="User Name">
-                    <input type="text" class="form-control customer" id="email" placeholder="Email">
-                    <input type="text" class="form-control customer" id="emailValidation" placeholder="Confirm Email">
-                    <input type="text" class="form-control customer" id="password" placeholder="Password">
-                    <input type="text" class="form-control customer" id="passwordValidation" placeholder="Confirm Password">
-                    <input type="text" class="form-control customer" id="firstName" placeholder="First Name">
-                    <input type="text" class="form-control customer" id="lastName" placeholder="Last Name">
+                    <h1 class="form-heading">Enter your details</h1>
+                    <input type="text" class="form-control customer-resi" id="userName" placeholder="User Name">
+                    <input type="text" class="form-control customer-resi" id="email" placeholder="Email">
+                    <input type="text" class="form-control customer-resi" id="emailValidation" placeholder="Confirm Email">
+                    <input type="text" class="form-control customer-resi" id="password" placeholder="Password">
+                    <input type="text" class="form-control customer-resi" id="passwordValidation" placeholder="Confirm Password">
+                    <input type="text" class="form-control customer-resi" id="firstName" placeholder="First Name">
+                    <input type="text" class="form-control customer-resi" id="lastName" placeholder="Last Name">
                   </div>
-                  <hr>
+                  <hr class="pricing-hr">
                   <div class="circlePricing">
                     3
                   </div>
                   <h1>Create your Free Account</h1>
-                  <button type="submit" class="btn btn-success">Sign Up Free!</button>
+                  <button type="submit" class="btn btn-success" id="submit-btn-resi">Sign Up Free!</button>
                 </form>
               </div>
             </div><!--END OF ROW CONTAINER-->
@@ -194,7 +194,7 @@
           <div class="container pricingHeading">
             <div class="row">
               <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                <img src="img/enterprise.png" width="100" height="auto" class="benefitsIcon">
+                <img src="img/enterprise.png" width="60" height="auto">
               </div>
               <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11">
                 <h1>Set Up Your Enterprise Account</h1>
@@ -218,7 +218,7 @@
                 <h2>Unlimited Users</h2>
                 <h2>Unlimited Historical Data</h2>
                 <h2>Unlimited Platform Access</h2>
-                <hr>
+                <hr class="pricing-hr">
                 <div class="circlePricing">
                   2
                 </div>
@@ -236,12 +236,12 @@
                   <label class="radio-inline"><input type="radio" name="setUp" id="option1" onclick="getSetup();">Yes</label>
                   <label class="radio-inline"><input type="radio" name="setUp" id="option2" onclick="getSetup();">No</label>
                   <h2 id="costSetup">Set Up Total</h2>
-                  <hr>
+                  <hr class="pricing-hr">
                   <div class="circlePricing">
                     3
                   </div>
                   <div class="form-group">
-                    <h1>Enter your details</h1>
+                    <h1 class="form-heading">Enter your details</h1>
                     <input type="text" class="form-control customer" id="userName" placeholder="User Name">
                     <input type="text" class="form-control customer" id="email" placeholder="Email">
                     <input type="text" class="form-control customer" id="emailValidation" placeholder="Confirm Email">
@@ -251,29 +251,68 @@
                     <input type="text" class="form-control customer" id="lastName" placeholder="Last Name">
                     <input type="text" class="form-control customer" id="companyName" placeholder="Company Name">
                   </div>
-                  <h2 id="noTick">this should change</h2>
-                  <button class="btn btn-success" onclick="planUnderstood()">Start Trial</button><!--removed from btn 
+                  <!--<h2 id="noTick">this should change</h2>-->
+                  <button class="btn btn-success" id="submit-btn" onclick="planUnderstood()">Start Your Free Trial</button><!--removed from btn 
                 type="submit" -->
                 </form>
               </div>
               <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                 <div class="calculator">
                   <h1>Current Plan</h1>
-                  <span>Sites:<p id="totalSites">total</p></span>
-                  <span>Data Feeds:<p id="totalFeeds">total</p></span>
-                  <span>Set Up:<p id="setUp_yesNo">total</p></span>
-                  <span>Features:</span>
-                  <p><span id="free">0</span> Free Main Meters</p>
-                  <p>Unlimited Users</p>
-                  <p>Unlimited Historical Data</p>
-                  <p>Unlimited Platform Access</p>
-                  <p>30 Day Free Trial</p>
-                  <span>Price:<p id="grandTotal">total</p></span>
-                  <span>One Off Set Up Cost:<p id="setUpTotal">total</p></span>
-                  <span>*Only applicable after FREE 30 day, no obligation trial</span>
-                  <div class="checkbox">
-                  <label><input type="checkbox" id="understood" value="">I understand my price plan</label>
+                  <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 overview">
+                      <i class="ion-home"></i>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 overview">
+                      <i class="ion-stats-bars"></i>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 overview">
+                      <i class="ion-wrench"></i>
+                    </div>
                   </div>
+                  <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 overview">
+                      <p>Sites</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 overview">
+                      <p>Data Feeds</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 overview">
+                      <p>Set Up</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 overview">
+                      <p id="totalSites">total</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 overview">
+                      <p id="totalFeeds">total</p>
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 overview">
+                      <p id="setUp_yesNo">total</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 free-feeds">
+                      <p id="free"></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 total-cost">
+                      <h1 id="grandTotal">£0.00</h1>
+                      <h2>First Year Total</h2>
+                      <h3>*Only applicable after FREE 30 day, no obligation trial</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 calc-bottom">
+                      <div class="checkbox">
+                        <label><input type="checkbox" id="understood" value="">I understand my price plan</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--<span>Price:<p id="grandTotal">total</p></span>
+                  <span>One Off Set Up Cost:<p id="setUpTotal">total</p></span>-->
                 </div><!--/calculator-->
               </div>
             </div><!--END OF ROW CONTAINER-->
@@ -306,7 +345,7 @@
           <div class="container pricingHeading">
             <div class="row">
               <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-                <img src="img/serviceProviders.png" width="100" height="auto" class="benefitsIcon">
+                <img src="img/serviceProviders.png" width="60" height="auto">
               </div>
               <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11">
                 <h1>Discuss Your Service Provider Account</h1>
@@ -327,6 +366,7 @@
                   <h1><a href="tel:442031089365">+44 203 108 9365</a></h1>
                   <h1>email:</h1>
                   <h1><a href="mailto:info@energydeck.com">info@energydeck.com</a></h1>
+                  <br />
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -345,21 +385,22 @@
                 </div>
                 <form role="form">
                   <div class="form-group">
-                    <h1>Approximately, how many additional Data Feeds do you want to use?</h1>
+                    <h1>Scale</h1>
+                    <h2>Approximately, how many additional Data Feeds do you want to use?</h2>
                     <input type="text" class="form-control customer" id="feeds" placeholder="Aprx. Data Feeds">
                     <hr>
                     <div class="circlePricing">
                       3
                     </div>
-                    <h1>Enter your details</h1>
+                    <h1 class="form-heading">Enter your details</h1>
                     <input type="text" class="form-control customer" id="name" placeholder="Name">
                     <input type="text" class="form-control customer" id="company" placeholder="Company">
                     <input type="text" class="form-control customer" id="email" placeholder="Email">
                     <input type="text" class="form-control customer" id="phone" placeholder="Phone">
-                    <h1>Preferred Contact Time</h>
+                    <h1 class="form-heading">Preferred Contact Time</h>
                     <input type="text" class="form-control customer" id="dateTime" placeholder="Enter a time, date or both">
                   </div>
-                  <button type="submit" class="btn btn-success">Submit</button>
+                  <button type="submit" class="btn btn-success" id="submit-btn-resi">Submit</button>
                 </form>
               </div>
             </div><!--END OF ROW CONTAINER-->

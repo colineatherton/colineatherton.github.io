@@ -12,12 +12,12 @@ var SitesSetup = ""; // the amount of sites, used to work out set up fees
 
 //UPDATE THE CALCULATOR
 function updateCalculator(){
-free.innerHTML = freeFeeds;//DISPLAY ON CALC THE AMOUNT OF FREE FEEDS
+free.innerHTML = "Your first " + freeFeeds + " Data Feeds are Free";//DISPLAY ON CALC THE AMOUNT OF FREE FEEDS
 //if (costSites == "call us mon") {
 	//grandTotal = "just give us a call mon";
 	//} else {
-		grandTotal = (costSites + costFeeds);//TOTAL THE GRAND MONTHLY SPEND
-		displayTotal.innerHTML = grandTotal;//DISPLAY THE MONTHLY COST ON THE CALCULATOR
+		grandTotal = (((costSites + costFeeds) * 12) + costSetup);//TOTAL THE GRAND MONTHLY SPEND
+		displayTotal.innerHTML = "£" + grandTotal;//DISPLAY THE MONTHLY COST ON THE CALCULATOR
 //	};
 }
 ////////
@@ -48,7 +48,8 @@ function getSetup() {
     }
     howMuch.innerHTML = costSetup;//DISPLAY IN THE BODY, THE COST OF THE SETUP
     yesNo.innerHTML = setUp;//DISPLAY IN THE CALCULATOR IF SET UP WAS CHOSEN, YES OR NO
-    setupCalc.innerHTML = costSetup;//DISPLAY IN THE CALCULATOR THE COST OF THE SET UP
+    //setupCalc.innerHTML = costSetup;//DISPLAY IN THE CALCULATOR THE COST OF THE SET UP(NO LONGER IN HTML)
+    updateCalculator();//UPDATE THE CALCULATOR WITH CURRENT TOTAL
 }
 ////////
 
