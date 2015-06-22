@@ -965,7 +965,11 @@ footer {
     width: 50% !important; }
 
   .topBannerInnerLeft h1 {
-    font-size: 3.5em !important; } }
+    font-size: 3.5em !important; }
+
+  nav .EnergyDeckLogo {
+    width: 100px;
+    height: auto; } }
 @media (max-width: 992px) {
   .customersInner .customer-logos {
     text-align: center; }
