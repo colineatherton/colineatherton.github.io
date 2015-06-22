@@ -962,7 +962,10 @@ footer {
     height: auto; }
 
   footer .ed-logo {
-    width: 50% !important; } }
+    width: 50% !important; }
+
+  .topBannerInnerLeft h1 {
+    font-size: 1em; } }
 @media (max-width: 992px) {
   .customersInner .customer-logos {
     text-align: center; }
