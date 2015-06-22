@@ -951,11 +951,11 @@ footer {
     padding-top: 16px; } }
 @media (max-width: 768px) {
   .navbar-signUp {
-    margin-left: 0px; }
+    margin-left: 10px; }
 
   .navbar-logIn {
     margin-right: 0px;
-    margin-left: 0px; } }
+    margin-left: 20px; } }
 @media (max-width: 992px) {
   .topBanner .topBannerInnerLeft {
     text-align: center; }
