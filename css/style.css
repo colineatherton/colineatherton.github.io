@@ -814,7 +814,6 @@ html {
       font-size: 1em;
       text-align: left;
       font-family: helveticaLight;
-      color: #000;
       display: block;
       padding-left: 10px; }
     .social .socialInner h2 {
@@ -824,17 +823,16 @@ html {
       color: #fff;
       background-color: #2a2a2a;
       display: inline;
-      padding: 15px 15px 15px 30px;
+      padding: 15px 30px 15px 30px;
       margin-left: 0;
       -moz-border-radius: 0px 5px 5px 0px;
       -webkit-border-radius: 0px 5px 5px 0px;
       border-radius: 0px 5px 5px 0px;
       /* future proofing */
       -khtml-border-radius: 0px 5px 5px 0px;
-      /* for old Konqueror browsers */ }
+      /* for old Konqueror browsers */
+      line-height: 60px; }
     .social .socialInner h3 {
-      margin-left: 0;
-      margin-right: 0;
       font-size: 1.2em;
       text-align: left;
       font-family: helveticaLight;
@@ -863,7 +861,7 @@ html {
     background-size: cover;
     padding: 0;
     margin-bottom: 21px;
-    padding-top: 81px;
+    padding-top: 40px;
     padding-bottom: 30px;
     padding-right: 40px; }
   .social .blog2 {
@@ -876,7 +874,7 @@ html {
     background-size: cover;
     padding: 0;
     padding-bottom: 30px;
-    padding-top: 81px;
+    padding-top: 40px;
     padding-right: 40px; }
   .social .twitterPlugin {
     background-color: #fff;
