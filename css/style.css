@@ -967,6 +967,12 @@ footer {
     .topBanner h2 {
       margin: 0 !important;
       padding: 0 !important; }
+    .topBanner .ghost-button {
+      margin-bottom: 0 !important; }
+    .topBanner .topBannerInnerRight {
+      margin-top: 0; }
+    .topBanner .videoWrapper {
+      margin-top: 0px; }
 
   .navbar-logInSm {
     display: none !important; }
