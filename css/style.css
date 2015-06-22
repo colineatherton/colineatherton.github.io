@@ -39,12 +39,12 @@ html {
 	display: inline;
 }*/
 .navbar-logIn {
-  margin-right: 10px;
-  margin-left: 10px; }
+  margin-right: 0px;
+  margin-left: 20px; }
 
 .navbar-logInSm {
   float: right;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-left: 10px; }
 
 .topBanner {
