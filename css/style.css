@@ -965,7 +965,7 @@ footer {
     width: 50% !important; }
 
   .topBannerInnerLeft h1 {
-    font-size: 1em; } }
+    font-size: 1em !important; } }
 @media (max-width: 992px) {
   .customersInner .customer-logos {
     text-align: center; }
