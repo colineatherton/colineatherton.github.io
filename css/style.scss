@@ -94,7 +94,7 @@ html { -webkit-font-smoothing: antialiased; }
   	background-size: cover;
   	background-color: $colour2;
   	padding-bottom: 100px;
-  	padding-top: 120px;
+  	padding-top: 90px;
   	.announce {
   		h1 {
   			color: #e5e5e5;
@@ -543,16 +543,16 @@ hr {
 		background: #ffffff;
 		-moz-border-radius: 40px;
 	    -webkit-border-radius: 40px;
-		background-image: url(../img/onePlatformSelect.png);
+		background-image: url(../img/one.png);
 		background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: 1s;
-	    -mox-box-shadow: 0px 0px 1px 2px $colour1;
-    -webkit-box-shadow: 0px 0px 1px 2px $colour1;
-    box-shadow: 0px 0px 1px 2px $colour1;
+	    -mox-box-shadow: 0px 0px 1px 2px $colour2;
+    -webkit-box-shadow: 0px 0px 1px 2px $colour2;
+    box-shadow: 0px 0px 1px 2px $colour2;
 	}
 	.circletag2 {
 	    display: block;
@@ -573,16 +573,16 @@ hr {
 		background: #ffffff;
 		-moz-border-radius: 40px;
 	    -webkit-border-radius: 40px;
-		background-image: url(../img/flexibleReportingSelect.png);
+		background-image: url(../img/flex.png);
 		background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: 1s;
-	    -mox-box-shadow: 0px 0px 1px 2px $colour1;
-    -webkit-box-shadow: 0px 0px 1px 2px $colour1;
-    box-shadow: 0px 0px 1px 2px $colour1;
+	    -mox-box-shadow: 0px 0px 1px 2px $colour2;
+    -webkit-box-shadow: 0px 0px 1px 2px $colour2;
+    box-shadow: 0px 0px 1px 2px $colour2;
 	}
 	.circletag3 {
 	    display: block;
@@ -603,16 +603,16 @@ hr {
 		background: #ffffff;
 		-moz-border-radius: 40px;
 	    -webkit-border-radius: 40px;
-		background-image: url(../img/analyticsSelect.png);
+		background-image: url(../img/analytic.png);
 		background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: 1s;
-	    -mox-box-shadow: 0px 0px 1px 2px $colour1;
-    -webkit-box-shadow: 0px 0px 1px 2px $colour1;
-    box-shadow: 0px 0px 1px 2px $colour1;
+	    -mox-box-shadow: 0px 0px 1px 2px $colour2;
+    -webkit-box-shadow: 0px 0px 1px 2px $colour2;
+    box-shadow: 0px 0px 1px 2px $colour2;
 	}
 	.circletag4 {
 	    display: block;
@@ -633,16 +633,16 @@ hr {
 		background: #ffffff;
 		-moz-border-radius: 40px;
 	    -webkit-border-radius: 40px;
-		background-image: url(../img/projectTrackingSelect.png);
+		background-image: url(../img/project.png);
 		background-size: 45px 45px;
 	    background-position:50% 50%;
 	    background-repeat:no-repeat;
 	    margin: 0 auto;
 	    cursor: pointer;
 	    transition-duration: 1s;
-	    -mox-box-shadow: 0px 0px 1px 2px $colour1;
-    -webkit-box-shadow: 0px 0px 1px 2px $colour1;
-    box-shadow: 0px 0px 1px 2px $colour1;
+	    -mox-box-shadow: 0px 0px 1px 2px $colour2;
+    -webkit-box-shadow: 0px 0px 1px 2px $colour2;
+    box-shadow: 0px 0px 1px 2px $colour2;
 		}
 			.circletag1Select {
 	    display: block;
@@ -1059,7 +1059,6 @@ background: url(../img/banner22.jpg) no-repeat center center fixed;
 			text-align: left;
 			font-family: helveticaLight;
 			//font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-			color: #000;
 			display: block;
 			//margin-bottom: 40px;
 			padding-left: 10px;
@@ -1072,18 +1071,19 @@ background: url(../img/banner22.jpg) no-repeat center center fixed;
 			color: #fff;
 			background-color: $colour4;
 			display: inline;
-			padding: 15px 15px 15px 30px;
+			padding: 15px 30px 15px 30px;
 			margin-left: 0;
 			-moz-border-radius: 0px 5px 5px 0px;
 			-webkit-border-radius: 0px 5px 5px 0px;
 			border-radius: 0px 5px 5px 0px; /* future proofing */
 			-khtml-border-radius: 0px 5px 5px 0px; /* for old Konqueror browsers */
+			line-height: 60px;
 
 
 		}
 		h3{
-			margin-left: 0;
-			margin-right: 0;
+			//margin-left: 0;
+			//margin-right: 0;
 			//margin-top: 60px;
 			font-size: 1.2em;
 			text-align: left;
@@ -1120,7 +1120,7 @@ background: url(../img/banner22.jpg) no-repeat center center fixed;
   	background-size: cover;
   	padding: 0;
   	margin-bottom: 21px;
-  	padding-top: 81px;
+  	padding-top: 40px;
   	padding-bottom: 30px;
   	padding-right: 40px;
 
@@ -1136,7 +1136,7 @@ background: url(../img/banner22.jpg) no-repeat center center fixed;
   	background-size: cover;
   	padding: 0;
   	padding-bottom: 30px;
-  	padding-top: 81px;
+  	padding-top: 40px;
 	padding-right: 40px;
 
 	}
@@ -1343,7 +1343,7 @@ footer {
 		}
 		.footerContact {
 
-		padding: 0;
+		//padding: 0; //was causeing white bar right
 		text-align: center;
 
 		margin: 0;
