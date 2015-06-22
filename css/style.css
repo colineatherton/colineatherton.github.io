@@ -957,6 +957,17 @@ footer {
     margin-right: 0px;
     margin-left: 20px; } }
 @media (max-width: 460px) {
+  .topBanner {
+    padding-top: 30px;
+    padding-bottom: 0px; }
+    .topBanner h1 {
+      margin-top: 30px !important;
+      margin-bottom: 20px;
+      padding: 0 !important; }
+    .topBanner h2 {
+      margin: 0 !important;
+      padding: 0 !important; }
+
   .navbar-logInSm {
     display: none !important; }
 
