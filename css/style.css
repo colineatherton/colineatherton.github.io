@@ -957,6 +957,9 @@ footer {
     margin-right: 0px;
     margin-left: 20px; } }
 @media (max-width: 992px) {
+  .customersInner .customer-logos {
+    text-align: center; }
+
   .topBanner .topBannerInnerLeft {
     text-align: center; }
     .topBanner .topBannerInnerLeft h1 {
