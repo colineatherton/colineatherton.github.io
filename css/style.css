@@ -424,16 +424,16 @@ html {
     background: #ffffff;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
-    background-image: url(../img/onePlatformSelect.png);
+    background-image: url(../img/one.png);
     background-size: 45px 45px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     margin: 0 auto;
     cursor: pointer;
     transition-duration: 1s;
-    -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
-    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
-    box-shadow: 0px 0px 1px 2px #3d9cbc; }
+    -mox-box-shadow: 0px 0px 1px 2px #558e28;
+    -webkit-box-shadow: 0px 0px 1px 2px #558e28;
+    box-shadow: 0px 0px 1px 2px #558e28; }
   .features .featuresInner .circletag2 {
     display: block;
     width: 80px;
@@ -452,16 +452,16 @@ html {
     background: #ffffff;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
-    background-image: url(../img/flexibleReportingSelect.png);
+    background-image: url(../img/flex.png);
     background-size: 45px 45px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     margin: 0 auto;
     cursor: pointer;
     transition-duration: 1s;
-    -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
-    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
-    box-shadow: 0px 0px 1px 2px #3d9cbc; }
+    -mox-box-shadow: 0px 0px 1px 2px #558e28;
+    -webkit-box-shadow: 0px 0px 1px 2px #558e28;
+    box-shadow: 0px 0px 1px 2px #558e28; }
   .features .featuresInner .circletag3 {
     display: block;
     width: 80px;
@@ -480,16 +480,16 @@ html {
     background: #ffffff;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
-    background-image: url(../img/analyticsSelect.png);
+    background-image: url(../img/analytic.png);
     background-size: 45px 45px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     margin: 0 auto;
     cursor: pointer;
     transition-duration: 1s;
-    -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
-    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
-    box-shadow: 0px 0px 1px 2px #3d9cbc; }
+    -mox-box-shadow: 0px 0px 1px 2px #558e28;
+    -webkit-box-shadow: 0px 0px 1px 2px #558e28;
+    box-shadow: 0px 0px 1px 2px #558e28; }
   .features .featuresInner .circletag4 {
     display: block;
     width: 80px;
@@ -508,16 +508,16 @@ html {
     background: #ffffff;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
-    background-image: url(../img/projectTrackingSelect.png);
+    background-image: url(../img/project.png);
     background-size: 45px 45px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     margin: 0 auto;
     cursor: pointer;
     transition-duration: 1s;
-    -mox-box-shadow: 0px 0px 1px 2px #3d9cbc;
-    -webkit-box-shadow: 0px 0px 1px 2px #3d9cbc;
-    box-shadow: 0px 0px 1px 2px #3d9cbc; }
+    -mox-box-shadow: 0px 0px 1px 2px #558e28;
+    -webkit-box-shadow: 0px 0px 1px 2px #558e28;
+    box-shadow: 0px 0px 1px 2px #558e28; }
   .features .featuresInner .circletag1Select {
     display: block;
     width: 80px;
