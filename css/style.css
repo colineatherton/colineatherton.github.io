@@ -978,7 +978,77 @@ footer {
     display: none !important; }
 
   .navbar-signUp2 {
-    display: none !important; } }
+    display: none !important; }
+
+  .profiles h1 {
+    padding-top: 10px;
+    padding-bottom: 0px; }
+
+  .profilesInner h1 {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+
+  .profilesInner h2 {
+    padding-top: 5px !important; }
+
+  .signUpTxt {
+    display: none; }
+
+  .profiles hr {
+    margin-top: 40px; }
+
+  .profiles {
+    padding-bottom: 40px; }
+
+  .features {
+    padding-top: 0;
+    padding-bottom: 30px; }
+    .features h1 {
+      padding-top: 10px; }
+
+  .featuresInner h1 {
+    font-size: 1.4em !important; }
+
+  .customers {
+    padding-bottom: 30px; }
+    .customers h1 {
+      padding-top: 20px; }
+
+  .qoute p {
+    padding: 50px 30px 30px 30px !important; }
+
+  .social {
+    padding-bottom: 30px; }
+    .social .socialInner {
+      margin: 0;
+      padding: 0; }
+      .social .socialInner h1 {
+        padding-top: 15px; }
+      .social .socialInner h2 {
+        display: block;
+        line-height: 20px;
+        padding: 10px;
+        margin: 0;
+        border-radius: 10px; }
+      .social .socialInner h3 {
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px; }
+      .social .socialInner .blog1 {
+        padding: 20px 20px 10px 20px;
+        margin-bottom: 20px; }
+      .social .socialInner .blog2 {
+        padding: 20px 20px 10px 20px;
+        margin-bottom: 0; }
+
+  footer {
+    padding-top: 30px; }
+    footer .social-icon {
+      padding: 5px !important; }
+    footer .subFooter {
+      margin-top: 30px; }
+      footer .subFooter p {
+        padding-bottom: 20px; } }
 @media (max-width: 750px) {
   .customersInner .customer-logos img {
     width: 40px;
