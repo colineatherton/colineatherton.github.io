@@ -7,6 +7,10 @@ var grandTotal = "0"; // total to display in calculator
 var freeFeeds = ""; // the amount of free feeds
 var free = document.getElementById("free");
 var displayTotal = document.getElementById("grandTotal");
+var totalSitesSmall = document.getElementById("totalSitesSmall");
+var totalFeedsSmall = document.getElementById("totalFeedsSmall");
+var setUp_yesNoSmall = document.getElementById("setUp_yesNoSmall");
+var displayTotalSmall = document.getElementById("grandTotalSmall");
 var SitesSetup = ""; // the amount of sites, used to work out set up fees
 ////////
 
@@ -18,6 +22,7 @@ free.innerHTML = "Your first " + freeFeeds + " Data Feeds are Free";//DISPLAY ON
 	//} else {
 		grandTotal = (((costSites + costFeeds) * 12) + costSetup);//TOTAL THE GRAND MONTHLY SPEND
 		displayTotal.innerHTML = "£" + grandTotal;//DISPLAY THE MONTHLY COST ON THE CALCULATOR
+		displayTotalSmall.innerHTML = "£" + grandTotal;// update small calculator
 //	};
 }
 ////////
@@ -48,6 +53,7 @@ function getSetup() {
     }
     howMuch.innerHTML = costSetup;//DISPLAY IN THE BODY, THE COST OF THE SETUP
     yesNo.innerHTML = setUp;//DISPLAY IN THE CALCULATOR IF SET UP WAS CHOSEN, YES OR NO
+    setUp_yesNoSmall.innerHTML = setUp; //Display in small calc
     //setupCalc.innerHTML = costSetup;//DISPLAY IN THE CALCULATOR THE COST OF THE SET UP(NO LONGER IN HTML)
     updateCalculator();//UPDATE THE CALCULATOR WITH CURRENT TOTAL
 }
@@ -65,6 +71,7 @@ function getFeeds() {
 
 	//WHEN FEEDS ENTERED DO THIS...
 	totalFeeds.innerHTML = numFeeds; //UPDATE THE CALC TO SHOW HOW MANY FEEDS IN PLAN
+	totalFeedsSmall.innerHTML = numFeeds; // display in small calc
 	numFeeds = (Number(numFeeds)); //TURN THE AMOUNT OF FEEDS INTO A NUMBER
 	numFeeds = (numFeeds - freeFeeds); //TAKE AWAY ANY FREE FEEDS THAT COME WITH SITES AND LEAVE BILLABLE FEEDS
 	if ((numFeeds + freeFeeds) >= 50) { //IF THERE ARE 50 OR MORE FEEDS DO THIS...
@@ -88,7 +95,7 @@ function getFeeds() {
 function getSites() {
 	//LOCAL VARIABLES
 	var sites = document.getElementById("sites"); //WHERE THE SITES ARE ENTERED
-	var totalSites = document.getElementById("totalSites"); //WHERE AMOUNT OF SITES ARE SHOWN ON CALCULATOR
+	var r = document.getElementById("totalSites"); //WHERE AMOUNT OF SITES ARE SHOWN ON CALCULATOR
 	var howMuch = document.getElementById("costSites"); // WHERE THE COST OF THE SITES ARE SHOWN IN THE BODY
 	var numSites = sites.value; // THE AMOUNT OF SITES
 	var billSites = ""; //THE AMOUNT OF BILLABLE SITES
@@ -96,6 +103,7 @@ function getSites() {
 
 	//WHEN SITES ENTERED DO THIS...
 	totalSites.innerHTML = numSites; //UPDATE THE CALC TO SHOW HOW MANY SITES IN PLAN
+	totalSitesSmall.innerHTML = numSites; //UPDATE THE CALC TO SHOW HOW MANY SITES IN PLAN
 	numSites = (Number(numSites)); //TURN THE AMOUNT OF SITES INTO A NUMBER
 	if (numSites >= 10) { //IF THERE ARE 10 OR MORE SITES DO THIS...
 		//callusmon();

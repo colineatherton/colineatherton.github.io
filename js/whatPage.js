@@ -1,16 +1,16 @@
      $(document).ready(function(){
         var profile = window.location.hash;
-        if (profile == '#residential') {
-        	$('#enterprise').removeClass('active');
-        	$('#residential').addClass('active');
-        	$('#residentialSection').addClass('circletagResiSelected');
-        	$('#enterpriseSection').removeClass('circletagBusiSelected');
-        	$('#enterpriseSection').addClass('circletagBusi');
-        }; if (profile == '#serviceProviders') {
-        	$('#enterprise').removeClass('active');
-        	$('#serviceProviders').addClass('active');
-        	$('#serviceProvidersSection').addClass('circletagSPSelected');
-        	$('#enterpriseSection').removeClass('circletagBusiSelected');
-        	$('#enterpriseSection').addClass('circletagBusi');
+        if (profile == '#owner-tenant') {
+        	$('#sp').removeClass('active');
+        	$('#yours').addClass('active');
+        	$('#yoursSection').addClass('circletagYoursSelect');
+        	$('#SPSection').removeClass('circletagSomeoneElseSelect');
+            $('#yoursSection').addClass('circletagSomeoneElseSolid');
+        }; if (profile == '#service-provider') {
+        	$('#yours').removeClass('active');
+        	$('#sp').addClass('active');
+        	$('#SPSection').addClass('circletagSomeoneElseSelect');
+        	$('#yoursSection').removeClass('circletagYoursSelect');
+        	$('#yoursSection').addClass('circletagYoursSolid');
         };
       });
