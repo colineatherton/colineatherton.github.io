@@ -3,14 +3,14 @@
         if (profile == '#owner-tenant') {
         	$('#sp').removeClass('active');
         	$('#yours').addClass('active');
-        	$('#yoursSection').addClass('circletagYoursSelect');
-        	$('#SPSection').removeClass('circletagSomeoneElseSelect');
-            $('#yoursSection').addClass('circletagSomeoneElseSolid');
+        	$('#yoursSection').addClass('profile-owner-selected');
+        	$('#SPSection').removeClass('profile-service-provider-selected');
+            $('#yoursSection').addClass('profile-service-provider-solid');
         }; if (profile == '#service-provider') {
         	$('#yours').removeClass('active');
         	$('#sp').addClass('active');
-        	$('#SPSection').addClass('circletagSomeoneElseSelect');
-        	$('#yoursSection').removeClass('circletagYoursSelect');
-        	$('#yoursSection').addClass('circletagYoursSolid');
+        	$('#SPSection').addClass('profile-service-provider-selected');
+        	$('#yoursSection').removeClass('profile-owner-selected');
+        	$('#yoursSection').addClass('profile-owner-solid');
         };
       });

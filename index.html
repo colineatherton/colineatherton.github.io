@@ -7,7 +7,6 @@
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>EnergyDeck</title>
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/ionicons.css" rel="stylesheet">
@@ -29,22 +28,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="./index.html"><img class="EnergyDeckLogo" src="img/EnergyDeck.png"></a>
-          <ul class="nav navbar-nav pull-right navbar-right navbar-logInSm visible-xs">
+          <a class="navbar-brand" href="./index.html"><img class="EnergyDeck-logo" src="img/EnergyDeck.png" alt="EnergyDeck Logo"></a>
+          <ul class="nav navbar-nav pull-right navbar-right navbar-log-in-sm visible-xs">
             <li><a href="#">Log in</a></li>
           </ul>
-          <a href="pricing.html"><button type="button" class="btn btn-success navbar-btn pull-right navbar-right navbar-signUp2 visible-xs">Sign Up</button></a>
+          <a href="pricing.html"><button type="button" class="btn btn-success navbar-btn pull-right navbar-right navbar-sign-up-sm visible-xs">Sign Up</button></a>
         </div>    
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!--nav Collapse menu-->
-          <ul class="nav navbar-nav navbar-right navbar-logIn">
+          <ul class="nav navbar-nav navbar-right navbar-log-in">
             <li><a href="#">Log in</a></li>
           </ul>
-          <a href="pricing.html"><button type="button" class="btn btn-success navbar-btn navbar-right navbar-signUp">Sign Up</button></a>
+          <a href="pricing.html"><button type="button" class="btn btn-success navbar-btn navbar-right navbar-sign-up">Sign Up</button></a>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="benefits.html">Benefits</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
+            <li class="sign-up-collapse"><a href="pricing.html"><button type="button" class="btn btn-success navbar-btn navbar-right sign-up-collapse">Sign Up</button></a></li>
+            <li class="log-in-collapse bottom-border top-border"><a href="#">Log in</a></li>
+            <li class="bottom-border"><a href="benefits.html">Benefits</a></li>
+            <li class="bottom-border"><a href="pricing.html">Pricing</a></li>
+            <li class="bottom-border"><a href="blog.html">Blog</a></li>
+            <li class="bottom-border"><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div><!--/nav Collapse menu-->
@@ -53,18 +54,18 @@
 <!--/NAV-->
 
 <!--TOP BANNER-->
-    <div class="container-fluid topBanner">
+    <div class="container-fluid top-banner">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 col-xl-6 topBannerInnerLeft">
+          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 col-xl-6 top-banner-inner-left">
             <div class="intro">
               <h1>Optimise your building.</h1>
               <h2>Advanced tracking, analysis and management tool to drive improvements in building efficiency and sustainability.</h2>
               <a class="ghost-button" href="pricing.html">Sign Up Free</a>
             </div>
           </div><!--/inner left-->
-          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 col-xl-6 topBannerInnerRight">
-            <div class="videoWrapper">
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 col-xl-6 top-banner-inner-right">
+            <div class="video-wrapper">
               <iframe width="420" height="315" src="https://www.youtube.com/embed/pck7ZPVsqbA" frameborder="0" allowfullscreen></iframe>
             </div>
           </div><!--/inner right-->
@@ -79,51 +80,51 @@
       <div class="row">
         <div class="line"><!--dotted line behind feature icons-->
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 featuresInner"><!--one platform-->
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 features-inner"><!--one platform-->
           <h1>One Platform</h1>
-          <div data-target="#myCarousel" data-slide-to="0" class="circletag1 circletag1Select"><!--one platform icon-->
+          <div data-target="#my-carousel" data-slide-to="0" class="one-platform-icon one-platform-icon-selected"><!--one platform icon-->
           </div>
           <h2>All of your buildings, metrics, stakeholders, projects and data sources in a single platform.</h2>
         </div><!--/one platform-->
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 featuresInner"><!--flexible reporting-->
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 features-inner"><!--flexible reporting-->
           <h1>Flexible Reporting</h1>
-          <div data-target="#myCarousel" data-slide-to="1" class="circletag2"><!--flexbile reporting icon-->
+          <div data-target="#my-carousel" data-slide-to="1" class="flexible-reporting-icon"><!--flexbile reporting icon-->
           </div>
           <h2>Easily get access to your data with custom reports, fast csv extract and simple industry reporting.</h2>
         </div><!--/flexible reporting-->
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 featuresInner"><!--analytics-->
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 features-inner"><!--analytics-->
           <h1>Analytics</h1>
-          <div data-target="#myCarousel" data-slide-to="2" class="circletag3"><!--analytics icon-->
+          <div data-target="#my-carousel" data-slide-to="2" class="analytics-icon"><!--analytics icon-->
           </div>
           <h2>Automatic benchmarking compares your performance accross your portfolio and the global database.</h2>
         </div><!--/analytics-->
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 featuresInner"><!--project tracking-->
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 features-inner"><!--project tracking-->
           <h1>Project Tracking</h1>
-          <div data-target="#myCarousel" data-slide-to="3" class="circletag4"><!--project tracking icon-->
+          <div data-target="#my-carousel" data-slide-to="3" class="project-tracking-icon"><!--project tracking icon-->
           </div>
           <h2>Track your energy efficiency projects, measure your results, understand your return on investment.</h2>
         </div><!--/project tracking-->
       </div><!--/row-->
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 featuresSlider">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 features-slider">
           <div class="slider">
-            <div id="myCarousel" class="carousel slide">
+            <div id="my-carousel" class="carousel slide">
               <div class="carousel-inner">
 
       <!--one platform slide-->
                 <div class="item active">
                   <div class="row"><!--triangle at top of slide-->
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                       <div class="triangle">
                       </div>
-                      <div class="triangleInner">
+                      <div class="triangle-inner">
                       </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
                   </div><!--/triangle at top of slide-->
                   <div class="row"><!--fisrt row of slide-->
@@ -134,17 +135,17 @@
       <!--flexible reporting slide-->
                 <div class="item">
                   <div class="row"><!--triangle at top of slide-->
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                       <div class="triangle">
                       </div>
-                      <div class="triangleInner">
+                      <div class="triangle-inner">
                       </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
                   </div><!--/triangle at top of slide-->
                   <div class="carousel-caption">
@@ -157,17 +158,17 @@
       <!--analytics slide-->
                 <div class="item">
                   <div class="row"><!--triangle at top of slide-->
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                       <div class="triangle">
                       </div>
-                      <div class="triangleInner">
+                      <div class="triangle-inner">
                       </div>
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
                   </div><!--/triangle at top of slide-->
                   <div class="carousel-caption">
@@ -180,16 +181,16 @@
       <!--project tracking slide-->
                 <div class="item">
                   <div class="row"><!--triangle at top of slide-->
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analyticsSlide">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 analytics-slide">
                       <div class="triangle">
                       </div>
-                      <div class="triangleInner">
+                      <div class="triangle-inner">
                       </div>
                     </div>
                   </div><!--/triangle at top of slide-->
@@ -201,15 +202,15 @@
       <!--project tracking slide-->
 
               </div><!--/carousel-inner-->
-              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><!--previous slide control-->
+              <a class="left carousel-control" href="#my-carousel" role="button" data-slide="prev"><!--previous slide control-->
                 <i class="ion-ios-arrow-back"></i>
               </a><!--/control prev-->
-              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><!--next slide control-->
+              <a class="right carousel-control" href="#my-carousel" role="button" data-slide="next"><!--next slide control-->
                 <i class="ion-ios-arrow-forward"></i>
               </a><!--/control next-->
-            </div><!--/#myCarousel-->
+            </div><!--/#my-carousel-->
           </div><!--/slider-->
-        </div><!--/featuresSlider-->
+        </div><!--/features-slider-->
       </div><!--/row-->
     </div><!--/features container-->
 <!--END OF FEATURES-->
@@ -219,38 +220,38 @@
     <div class="container">
       <h1>What type of user are you?</h1>
       <div class="row"><!--icons row-->
-        <div class="col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1 profilesInner">
-          <div class="circletagYoursSolid">
+        <div class="col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1 profiles-inner">
+          <div class="profile-owner-solid">
           </div>
         </div>
-        <div class="col-lg-5 col-xl-5 profilesInner">
-          <div class="circletagSomeoneElseSolid">
+        <div class="col-lg-5 col-xl-5 profiles-inner">
+          <div class="profile-service-provider-solid">
           </div>
         </div>
       </div><!--/icons row-->
       <div class="row"><!--descriptions row-->
-        <div class="col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1 profilesInner">
+        <div class="col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1 profiles-inner">
           <h1>Owner / Occupier</h1>
           <h2>EnergyDeck is perfect for landlords with large portfolios and businesses.</h2>
         </div>
-        <div class="col-lg-5 col-xl-5 profilesInner">
+        <div class="col-lg-5 col-xl-5 profiles-inner">
           <h1>Service Provider</h1>
           <h2>Provide the benefits of EnergyDeck in your own white labelled platform.</h2>
         </div>
       </div><!--/descriptions row-->
       <div class="row"><!--learn CTA row-->
-        <div class="col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1 profilesInner">
+        <div class="col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1 profiles-inner">
           <a class="ghost-button-learn" href="benefits.html#owner-tenant">Learn More <i class="icons ion-ios-arrow-forward"></i></a>
         </div>
-        <div class="col-lg-5 col-xl-5 profilesInner">
+        <div class="col-lg-5 col-xl-5 profiles-inner">
           <a class="ghost-button-learn" href="benefits.html#service-provider">Learn More <i class="icons ion-ios-arrow-forward"></i></a>
         </div>
       </div><!--/learn CTA row-->
       <div class="row"><!--sign up CTA row-->
-        <div class="col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1 profilesInner">
+        <div class="col-lg-5 col-xl-5 col-lg-offset-1 col-xl-offset-1 profiles-inner">
           <a class="ghost-button-go" href="pricing.html#owner-tenant">Sign Up Free</a>
         </div>
-        <div class="col-lg-5 col-xl-5 profilesInner">
+        <div class="col-lg-5 col-xl-5 profiles-inner">
           <a class="ghost-button-go" href="pricing.html#service-provider">Contact Us</a>
         </div>
       </div><!--/sign up CTA row-->
@@ -262,39 +263,39 @@
     <div class="container">
       <h1>What type of user are you?</h1>
       <div class="row"><!--residential-->
-        <div class="col-xs-12 col-sm-12 col-md-12 profilesInner">
+        <div class="col-xs-12 col-sm-12 col-md-12 profiles-inner">
           <h1>Owner / Occupier</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-4 profilesInner">
-          <div class="circletagYours">
+        <div class="col-xs-12 col-sm-12 col-md-4 profiles-inner">
+          <div class="profile-owner-solid">
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 profilesInner">
+        <div class="col-xs-12 col-sm-12 col-md-4 profiles-inner">
           <h2>EnergyDeck is perfect for landlords with large portfolios and businesses.</h2>
           <a class="ghost-button-learn" href="benefits.html#owner-tenant">Learn More <i class="ion-ios-arrow-forward"></i></a>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 profilesInner">
+        <div class="col-xs-12 col-sm-12 col-md-4 profiles-inner">
           <a class="ghost-button-go" href="pricing.html#owner-tenant">Sign Up Free</a>
         </div>
       </div><!--/residential-->
       <hr>
       <div class="row"><!--enterprise-->
-        <div class="col-xs-12 col-sm-12 col-md-12 profilesInner">
+        <div class="col-xs-12 col-sm-12 col-md-12 profiles-inner">
           <h1>Service Provider</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-4 profilesInner">
-          <div class="circletagSomeoneElse">
+        <div class="col-xs-12 col-sm-12 col-md-4 profiles-inner">
+          <div class="profile-service-provider-solid">
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 profilesInner">
+        <div class="col-xs-12 col-sm-12 col-md-4 profiles-inner">
           <h2>Provide the benefits of EnergyDeck in your own white labelled platform.</h2>
           <a class="ghost-button-learn mo" href="benefits.html#service-provider">Learn More ></a>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 profilesInner">
+        <div class="col-xs-12 col-sm-12 col-md-4 profiles-inner">
           <a class="ghost-button-go" href="pricing.html#service-provider">Contact Us</a>
         </div>
       </div><!--/enterprise-->
@@ -306,80 +307,80 @@
     <div class="container-fluid customers">
       <div class="container">
         <h1>Why our customers use EnergyDeck</h1>
-        <div class="customersInner"><!--customer logos-->
+        <div class="customers-inner"><!--customer logos-->
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 customer-logos">
               <a href="#" onmouseover="document.EMH_Homes.src='img/customers/EMH_Homes.png';" onmouseout="document.EMH_Homes.src='img/customers/EnergyDeckEMH_Homes1.png';">
-                <img src="img/customers/EnergyDeckEMH_Homes1.png" name="EMH_Homes" width="80px" height="auto" alt="EMH Homes">
+                <img src="img/customers/EnergyDeckEMH_Homes1.png" name="EMH_Homes" width="80px" height="auto" alt="EMH Homes Logo">
               </a>
               <a href="#" onmouseover="document.DAC_Beachcroft.src='img/customers/DACBeachcroft.png';" onmouseout="document.DAC_Beachcroft.src='img/customers/EnergyDeckDAC_Beachcroft1.png';">
-                <img src="img/customers/EnergyDeckDAC_Beachcroft1.png" name="DAC_Beachcroft" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckDAC_Beachcroft1.png" name="DAC_Beachcroft" width="80px" height="auto" alt="Beachcroft Logo">
               </a>
               <a href="#" onmouseover="document.Avon_Fire_and_Rescue.src='img/customers/Avon_Fire_and_Rescue.png';" onmouseout="document.Avon_Fire_and_Rescue.src='img/customers/EnergyDeckAvon_Fire_and_Rescue1.png';">
-                <img src="img/customers/EnergyDeckAvon_Fire_and_Rescue1.png" name="Avon_Fire_and_Rescue" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckAvon_Fire_and_Rescue1.png" name="Avon_Fire_and_Rescue" width="80px" height="auto" alt="Avon Fire and Rescue Logo">
               </a>
               <a href="#" onmouseover="document.Leeds_Beckett_University.src='img/customers/Leeds_Beckett_University.png';" onmouseout="document.Leeds_Beckett_University.src='img/customers/EnergyDeckLeeds_Beckett_University1.png';">
-                <img src="img/customers/EnergyDeckLeeds_Beckett_University1.png" name="Leeds_Beckett_University" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckLeeds_Beckett_University1.png" name="Leeds_Beckett_University" width="80px" height="auto" alt="Leeds Beckett University Logo">
               </a>
               <a href="#" onmouseover="document.Forum_For_The_Future.src='img/customers/Forum_For_The_Future.png';" onmouseout="document.Forum_For_The_Future.src='img/customers/EnergyDeckForum_for_the_Future1.png';">
-                <img src="img/customers/EnergyDeckForum_for_the_Future1.png" name="Forum_For_The_Future" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckForum_for_the_Future1.png" name="Forum_For_The_Future" width="80px" height="auto" alt="Forum for the Future Logo">
               </a>
               <a href="#" onmouseover="document.Skanska.src='img/customers/Skanska.png';" onmouseout="document.Skanska.src='img/customers/EnergyDeckSkanska1.png';">
-                <img src="img/customers/EnergyDeckSkanska1.png" name="Skanska" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckSkanska1.png" name="Skanska" width="80px" height="auto" alt="Skanska Logo">
               </a>
               <a href="#" onmouseover="document.Ogilvy.src='img/customers/Ogilvy.png';" onmouseout="document.Ogilvy.src='img/customers/EnergyDeckOgilvy1.png';">
-                <img src="img/customers/EnergyDeckOgilvy1.png" name="Ogilvy" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckOgilvy1.png" name="Ogilvy" width="80px" height="auto" alt="Ogilvy Logo">
               </a>
               <a href="#" onmouseover="document.Pukka.src='img/customers/Pukka.png';" onmouseout="document.Pukka.src='img/customers/EnergyDeckPukka1.png';">
-                <img src="img/customers/EnergyDeckPukka1.png" name="Pukka" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckPukka1.png" name="Pukka" width="80px" height="auto" alt="Pukka Logo">
               </a>
               <a href="#" onmouseover="document.Tate.src='img/customers/Tate.png';" onmouseout="document.Tate.src='img/customers/EnergyDeckTate1.png';">
-                <img src="img/customers/EnergyDeckTate1.png" name="Tate" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckTate1.png" name="Tate" width="80px" height="auto" alt="Tate Logo">
               </a>
               <a href="#" onmouseover="document.UK_Green_Building_Council.src='img/customers/UK_Green_Building_Council.png';" onmouseout="document.UK_Green_Building_Council.src='img/customers/EnergyDeckUK_Green_Building_Council1.png';">
-                <img src="img/customers/EnergyDeckUK_Green_Building_Council1.png" name="UK_Green_Building_Council" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckUK_Green_Building_Council1.png" name="UK_Green_Building_Council" width="80px" height="auto" alt="UK Green Building Council Logo">
               </a>
               <a href="#" onmouseover="document.Considerate.src='img/customers/Considerate_Hoteliers.png';" onmouseout="document.Considerate.src='img/customers/EnergyDeckConsiderateHoteliers1.png';">
-                <img src="img/customers/EnergyDeckConsiderateHoteliers1.png" name="Considerate" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckConsiderateHoteliers1.png" name="Considerate" width="80px" height="auto" alt="Consierate Hoteliers Logo">
               </a>
               <a href="#" onmouseover="document.Octego.src='img/customers/Octego.png';" onmouseout="document.Octego.src='img/customers/EnergyDeckOctego1.png';">
-                <img src="img/customers/EnergyDeckOctego1.png" name="Octego" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckOctego1.png" name="Octego" width="80px" height="auto" alt="Octego Logo">
               </a>
               <a href="#" onmouseover="document.EDP.src='img/customers/EDP.png';" onmouseout="document.EDP.src='img/customers/EnergyDeckEDP1.png';">
-                <img src="img/customers/EnergyDeckEDP1.png" name="EDP" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckEDP1.png" name="EDP" width="80px" height="auto" alt="EDP Logo">
               </a>
               <a href="#" onmouseover="document.Prescient.src='img/customers/PrescientPower.png';" onmouseout="document.Prescient.src='img/customers/EnergyDeckPrescientPower1.png';">
-                <img src="img/customers/EnergyDeckPrescientPower1.png" name="Prescient" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckPrescientPower1.png" name="Prescient" width="80px" height="auto" alt="Prescient Power Logo">
               </a>
               <a href="#" onmouseover="document.Utility.src='img/customers/UtilityAlliance.png';" onmouseout="document.Utility.src='img/customers/EnergyDeckUtilityAlliance1.png';">
-                <img src="img/customers/EnergyDeckUtilityAlliance1.png" name="Utility" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckUtilityAlliance1.png" name="Utility" width="80px" height="auto" alt="Utility Alliance Logo">
               </a>
               <a href="#" onmouseover="document.Eco.src='img/customers/Economics.png';" onmouseout="document.Eco.src='img/customers/EnergyDeckEconomics1.png';">
-                <img src="img/customers/EnergyDeckEconomics1.png" name="Eco" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckEconomics1.png" name="Eco" width="80px" height="auto" alt="Econimics Logo">
               </a>
               <a href="#" onmouseover="document.Enerteq.src='img/customers/Enerteq.png';" onmouseout="document.Enerteq.src='img/customers/EnergyDeckEnerteq1.png';">
-                <img src="img/customers/EnergyDeckEnerteq1.png" name="Enerteq" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckEnerteq1.png" name="Enerteq" width="80px" height="auto" alt="Enerteq Logo">
               </a>
               <a href="#" onmouseover="document.KHT.src='img/customers/KHT.png';" onmouseout="document.KHT.src='img/customers/EnergyDeckKHT1.png';">
-                <img src="img/customers/EnergyDeckKHT1.png" name="KHT" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckKHT1.png" name="KHT" width="80px" height="auto" alt="KHT Logo">
               </a>
               <a href="#" onmouseover="document.CBH.src='img/customers/CBH.png';" onmouseout="document.CBH.src='img/customers/EnergyDeckCBH1.png';">
-                <img src="img/customers/EnergyDeckCBH1.png" name="CBH" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckCBH1.png" name="CBH" width="80px" height="auto" alt="CBH Logo">
               </a>
               <a href="#" onmouseover="document.Aster.src='img/customers/AsterCommunities.png';" onmouseout="document.Aster.src='img/customers/EnergyDeckAsterCommunities1.png';">
-                <img src="img/customers/EnergyDeckAsterCommunities1.png" name="Aster" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckAsterCommunities1.png" name="Aster" width="80px" height="auto" alt="Aster Communities Logo">
               </a>
               <a href="#" onmouseover="document.Riverside.src='img/customers/Riverside.png';" onmouseout="document.Riverside.src='img/customers/EnergyDeckRiverside1.png';">
-                <img src="img/customers/EnergyDeckRiverside1.png" name="Riverside" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckRiverside1.png" name="Riverside" width="80px" height="auto" alt="Riverside Logo">
               </a>
               <a href="#" onmouseover="document.Hill.src='img/customers/Hill.png';" onmouseout="document.Hill.src='img/customers/EnergyDeckHill1.png';">
-                <img src="img/customers/EnergyDeckHill1.png" name="Hill" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckHill1.png" name="Hill" width="80px" height="auto" alt="Hill Logo">
               </a>
               <a href="#" onmouseover="document.NEF.src='img/customers/NEF.png';" onmouseout="document.NEF.src='img/customers/EnergyDeckNEF1.png';">
-                <img src="img/customers/EnergyDeckNEF1.png" name="NEF" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckNEF1.png" name="NEF" width="80px" height="auto" alt="NEF Logo">
               </a>
               <a href="#" onmouseover="document.Bury.src='img/customers/BuryBlackPuddingCompany.png';" onmouseout="document.Bury.src='img/customers/EnergyDeckBuryBlackPudding1.png';">
-                <img src="img/customers/EnergyDeckBuryBlackPudding1.png" name="Bury" width="80px" height="auto">
+                <img src="img/customers/EnergyDeckBuryBlackPudding1.png" name="Bury" width="80px" height="auto" alt="Bury Black Pudding Company Logo">
               </a>
             </div><!--/6-->
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 qoute">
@@ -395,22 +396,22 @@
   <div class="container-fluid social">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 socialInner">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 social-inner">
           <h1>From the blog...</h1>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 socialInner blog1">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 social-inner blog-1">
             <!--span>05/05/15</span>-->
             <h2>05/05/15 - EnergyDeck and the GRESB survey</h2>
             <h3>With the 2015 GRESB survey period now well underway and the 1st July deadline looming, EnergyDeck's new feature...<span>+Read More</span></h3>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 socialInner blog2">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 social-inner blog-2">
             <!--<span>05/05/15</span>-->
             <h2>05/05/15 - EnergyDeck and the GRESB survey</h2>
             <h3>With the 2015 GRESB survey period now well underway and the 1st July deadline looming, EnergyDeck's new feature...<span>+Read More</span></h3>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 socialInner">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 social-inner">
           <h1>@EnergyDeck tweets</h1>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 socialInner twitterPlugin">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 social-inner twitter-plugin">
             <a class="twitter-timeline" href="https://twitter.com/EnergyDeck" data-chrome="transparent" data-widget-id="603596417861623808">Tweets by @EnergyDeck</a> 
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div>
@@ -424,37 +425,38 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footerBrand">
-          <a href="index.html"><img class="ed-logo" src="img/footer/EnergyDeck.png" width="100%" height="auto"></a>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-brand">
+          <a href="index.html"><img class="ed-logo" src="img/footer/EnergyDeck.png" width="100%" height="auto" alt="EnergyDeck Logo"></a>
           <p>everything you need to optimise your energy</p>
-          <a class="social-icon" href="https://twitter.com/energydeck" target="_blank"><img src="img/footer/twitter.png" width="50" height="50"></a>
-          <a class="social-icon" href="https://www.linkedin.com/company/energydeck" target="_blank"><img src="img/footer/linkedin.png" width="50" height="50"></a>
-          <a class="social-icon" href="https://plus.google.com/+Energydeck/videos" target="_blank"><img src="img/footer/googleplus.png" width="50" height="50"></a>
-          <a class="social-icon" href="https://www.facebook.com/EnergyDeck" target="_blank"><img src="img/footer/facebook.png" width="50" height="50"></a>
+          <a class="social-icon" href="https://twitter.com/energydeck" target="_blank"><img src="img/footer/twitter.png" width="50" height="50" alt="Twitter Icon"></a>
+          <a class="social-icon" href="https://www.linkedin.com/company/energydeck" target="_blank"><img src="img/footer/linkedin.png" width="50" height="50" alt="Linkedin Icon"></a>
+          <a class="social-icon" href="https://plus.google.com/+Energydeck/videos" target="_blank"><img src="img/footer/googleplus.png" width="50" height="50" alt="Google Plus Icon"></a>
+          <a class="social-icon" href="https://www.facebook.com/EnergyDeck" target="_blank"><img src="img/footer/facebook.png" width="50" height="50" alt="Facebook Icon"></a>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footerMenuLinks">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-menu-links">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="benefits.html">Benefits</a></li>
             <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footerContact">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-contact">
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footerContact">
-              <a href="tel:442031089365"><img src="img/footer/phone.png" width="20" height="20" id="phone"></a>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-contact">
+              <a href="tel:442031089365"><img src="img/footer/phone.png" width="20" height="20" id="phone" alt="Phone Icon"></a>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 footerContact">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 footer-contact">
               <p><a href="tel:442031089365">+44 203 108 9365</a></p>
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footerContact">
-              <img src="img/footer/address.png" width="20" height="20" id="address">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-contact">
+              <img src="img/footer/address.png" width="20" height="20" id="address" alt="Address Icon">
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 footerContact">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 footer-contact">
               <p>69 Wilson Street
               <br />London
               <br />EC2A 2BB
@@ -462,17 +464,17 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footerContact">
-              <a href="mailto: info@energydeck.com"><img src="img/footer/email.png" width="20" height="20" id="email"></a>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 footer-contact">
+              <a href="mailto: info@energydeck.com"><img src="img/footer/email.png" width="20" height="20" id="email" alt="Email Icon"></a>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 footerContact">
-              <p id="emailText"><a href="mailto: info@energydeck.com">info@energdeck.com</a></p>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 footer-contact">
+              <p id="email-text"><a href="mailto: info@energydeck.com">info@energdeck.com</a></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid subFooter">
+    <div class="container-fluid sub-footer">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl- 12">
           <p>&copy;2014-2015 EnergyDeck. All rights reserved. EnergyDeck is registered in England &amp; Wales under company number 07826977. EnergyDeck is a registered trademark</p>
