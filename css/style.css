@@ -47,28 +47,31 @@ html {
 
 .top-banner {
   min-height: auto;
-  background: url(../img/newbg26.jpg) no-repeat center center fixed;
+  background: url(../img/new-bg-3.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: #fff;
-  padding-bottom: 100px;
-  padding-top: 90px;
+  padding-bottom: 20px;
+  padding-top: 40px;
   border-bottom: solid 1px #cacaca; }
   .top-banner .top-banner-inner-left h1 {
-    color: #2a2a2a;
-    -webkit-text-fill-color: #2a2a2a;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
     -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #2a2a2a;
     font-family: helveticaMedium;
-    font-size: 6.2em;
-    padding: 20px; }
+    font-size: 4em;
+    padding: 20px 20px 0 20px; }
   .top-banner .top-banner-inner-left h2 {
-    color: #2a2a2a;
-    font-family: helveticaLight;
-    font-size: 2em;
-    padding: 20px;
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #2a2a2a;
+    font-family: helveticaMedium;
+    font-size: 2.5em;
+    padding: 0 20px 0 20px;
     line-height: 40px; }
   .top-banner .top-banner-inner-left .ghost-button {
     display: inline-block;
@@ -91,7 +94,7 @@ html {
     transition-duration: 1s;
     color: #fff; }
   .top-banner .top-banner-inner-right {
-    margin-top: 50px; }
+    margin-top: 20px; }
     .top-banner .top-banner-inner-right .video-wrapper {
       position: relative;
       padding-bottom: 56.25%;
@@ -475,17 +478,17 @@ html {
     font-size: 1.2em;
     text-align: center;
     font-family: helveticaLight;
-    color: #fff; }
+    color: #2a2a2a; }
     .customers .customers-inner .qoute p {
       padding: 50px;
-      background-color: #cacaca;
+      background-color: #cfdec4;
       text-align: left;
       border-radius: 15px; }
     .customers .customers-inner .qoute .circle {
       display: block;
       width: 90px;
       height: 90px;
-      background: #e6e6e6;
+      background: #558e28;
       border-style: solid;
       border-width: 3px;
       -moz-border-radius: 45px;
@@ -494,9 +497,9 @@ html {
       text-align: center;
       line-height: 85px;
       margin: 0 auto;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       position: relative;
-      top: 60px; }
+      top: 70px; }
       .customers .customers-inner .qoute .circle img {
         text-align: center; }
 
@@ -511,7 +514,7 @@ html {
       text-align: left;
       font-size: 2em;
       font-family: helveticaLight;
-      color: #2a2a2a;
+      color: #fff;
       padding-top: 30px;
       padding-bottom: 20px; }
     .social .social-inner span {
@@ -807,11 +810,14 @@ footer {
 .benefits-inner p {
   display: inline-block;
   font-size: 1em;
-  padding-left: 10px; }
+  padding-left: 60px;
+  text-indent: 0em; }
 .benefits-inner i {
   font-size: 2em;
   position: relative;
-  top: 5px; }
+  top: 5px;
+  left: 50px;
+  text-indent: -1em; }
 
 .benefits-cta {
   text-align: center;
@@ -832,7 +838,6 @@ footer {
   font-family: helveticaLight;
   font-size: 1.2em;
   margin: 0 auto;
-  margin-top: 20px;
   transition-duration: 1s;
   border-radius: 20px; }
 
@@ -906,6 +911,11 @@ footer {
     text-align: center;
     font-family: helveticaThin;
     color: #2a2a2a; }
+  .pricing .set-up-question {
+    padding-top: 10px; }
+  .pricing .ok-btn {
+    display: inline-block;
+    margin-left: 5px; }
   .pricing .pricing-hr {
     margin-top: 40px;
     margin-bottom: 40px; }
@@ -928,20 +938,13 @@ footer {
   .pricing .stop-calculator {
     background-color: #fff;
     height: 30px; }
+  .pricing .inline-calculator {
+    display: none; }
   .pricing .calculator {
+    width: 314.969px !important;
     background-color: #e6e6e6;
-    border: 4px solid #558e28;
+    border: 1px solid #2a2a2a;
     border-radius: 25px; }
-    .pricing .calculator h1 {
-      color: #2a2a2a;
-      background-color: #cacaca;
-      margin-top: 0;
-      border: 2px solid #cacaca;
-      border-radius: 17px 17px 0 0;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border-bottom-color: #558e28;
-      font-family: helveticaThin; }
     .pricing .calculator .overview {
       text-align: center; }
       .pricing .calculator .overview i {
@@ -950,17 +953,15 @@ footer {
       .pricing .calculator .overview p {
         font-family: helveticaRegular;
         font-size: 1.2em;
-        color: #558e28; }
-    .pricing .calculator .free-feeds {
+        color: #2a2a2a; }
+    .pricing .calculator .overview-result {
       text-align: center; }
-      .pricing .calculator .free-feeds p {
+      .pricing .calculator .overview-result p {
         font-family: helveticaRegular;
         font-size: 1.2em;
         color: #558e28; }
     .pricing .calculator .total-cost h1 {
       color: #2a2a2a;
-      background-color: #cacaca;
-      border: 2px solid #cacaca;
       border-radius: 0 0 0 0;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -969,36 +970,12 @@ footer {
       font-size: 2em; }
     .pricing .calculator .total-cost h2 {
       color: #2a2a2a;
-      background-color: #cacaca;
-      border: 2px solid #cacaca;
       border-radius: 0 0 0 0;
       padding-top: 15px;
       padding-bottom: 15px;
       margin-top: 0;
       font-size: 1.2em;
       margin-bottom: 0; }
-    .pricing .calculator .total-cost h3 {
-      text-align: center;
-      color: #2a2a2a;
-      background-color: #cacaca;
-      border: 2px solid #cacaca;
-      border-radius: 0 0 0 0;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      margin-top: 0;
-      font-size: .9em;
-      margin-bottom: 0; }
-  .pricing .calculator-bottom .checkbox {
-    text-align: center;
-    color: #2a2a2a;
-    background-color: #cacaca;
-    border: 2px solid #cacaca;
-    border-radius: 0 0 17px 17px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: 0;
-    font-size: .9em;
-    margin-bottom: 0; }
 
 .calculator-small {
   padding-top: 5px;
@@ -1025,11 +1002,18 @@ footer {
 
 form {
   text-align: center; }
+  form label {
+    display: block; }
   form #sites, form #feeds {
-    width: 20%;
+    width: 100px;
     display: block;
     margin: 0 auto;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  form #sites {
+    display: inline-block; }
+  form #feeds {
+    display: inline-block; }
   form .customer {
     width: 40%;
     display: block;
@@ -1037,21 +1021,21 @@ form {
     margin-top: 15px; }
   form #submit-btn {
     margin-top: 15px;
-    margin-bottom: 40px; }
+    margin-bottom: 15px; }
   form #submit-btn-service-provider {
     margin-top: 15px;
     margin-bottom: 60px; }
 
 .top-banner-about {
   min-height: auto;
-  background: url(../img/newbg31.jpg) no-repeat center center fixed;
+  background: url(../img/new-bg-3.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: #fff;
-  padding-bottom: 100px;
-  padding-top: 90px;
+  padding-bottom: 20px;
+  padding-top: 40px;
   border-bottom: solid 1px #cacaca; }
   .top-banner-about .top-banner-inner-left h1 {
     color: #2a2a2a;
@@ -1059,13 +1043,16 @@ form {
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #fff;
     font-family: helveticaMedium;
-    font-size: 6.2em;
-    padding: 20px; }
+    font-size: 4em;
+    padding: 20px 20px 0 20px; }
   .top-banner-about .top-banner-inner-left h2 {
     color: #2a2a2a;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: #2a2a2a;
     font-family: helveticaLight;
-    font-size: 2em;
-    padding: 20px;
+    font-size: 2.2em;
+    padding: 0 20px 0 20px;
     line-height: 40px; }
 
 .about-page {
@@ -1164,33 +1151,38 @@ form {
 .about-cta {
   text-align: center;
   padding-top: 75px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
   background-color: #e3e3e3; }
 
 .top-banner-contact {
   min-height: auto;
-  background: url(../img/newbg51.jpg) no-repeat center center fixed;
+  background: url(../img/new-bg-3.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: #fff;
-  padding-bottom: 100px;
-  padding-top: 90px;
+  padding-bottom: 20px;
+  padding-top: 40px;
   border-bottom: solid 1px #cacaca; }
+  .top-banner-contact .top-banner-inner-left .contact-us {
+    display: none; }
   .top-banner-contact .top-banner-inner-left h1 {
     color: #2a2a2a;
     -webkit-text-fill-color: #2a2a2a;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #fff;
     font-family: helveticaMedium;
-    font-size: 6.2em;
-    padding: 20px; }
+    font-size: 4em;
+    padding: 20px 20px 0 20px; }
   .top-banner-contact .top-banner-inner-left h2 {
     color: #2a2a2a;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: #2a2a2a;
     font-family: helveticaLight;
-    font-size: 2em;
-    padding: 20px;
+    font-size: 2.2em;
+    padding: 0 20px 0 20px;
     line-height: 40px; }
 
 .google-maps {
@@ -1207,8 +1199,8 @@ form {
   height: 100% !important; }
 
 .contact-page {
-  padding-top: 40px;
-  padding-bottom: 60px; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
   .contact-page h1 {
     font-size: 2em;
     font-family: helveticaLight;
@@ -1225,115 +1217,160 @@ form {
     font-family: helveticaLight;
     color: #2a2a2a;
     text-align: center; }
-  .contact-page a {
-    text-decoration: none;
-    color: #2a2a2a; }
+
+.test1 {
+  background-color: #558e28; }
+
+.test2 {
+  background-color: #2a2a2a; }
+
+.contact-page-background {
+  background-color: #e6e6e6;
+  padding-bottom: 10px; }
 
 .circle-contact {
   display: block;
   margin: 0 auto;
-  width: 80px;
-  height: 80px;
-  background: #558e28;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
+  width: 60px;
+  height: 60px;
+  background: #2a2a2a;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
   text-align: center;
   margin-top: 20px; }
   .circle-contact img {
-    margin-top: 20px; }
+    margin-top: 10px; }
 
 .circle-contact-social {
   display: block;
   margin: 0 auto;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   background: #2a2a2a;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
   text-align: center;
   margin-top: 20px; }
   .circle-contact-social img {
-    margin-top: 20px; }
+    margin-top: 10px; }
 
 .follow {
   margin-top: 30px;
   margin-bottom: 30px; }
 
-.blog {
-  margin-top: 60px; }
-  .blog .blog-main {
-    padding-bottom: 60px; }
-    .blog .blog-main h1 {
-      font-size: 2em;
-      text-align: left;
-      font-family: helveticaThin;
-      color: #2a2a2a;
-      margin-bottom: 15px; }
-    .blog .blog-main .blog-post {
-      padding-bottom: 60px; }
-      .blog .blog-main .blog-post .who-post .blog-circle {
-        width: 60px;
-        height: 60px;
-        -moz-border-radius: 30px;
-        -webkit-border-radius: 30px;
-        background-image: url(../img/Nic_on_holiday.png);
-        background-size: 60px auto;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        transition-duration: 1s; }
-      .blog .blog-main .blog-post .who-post p {
-        margin: 0;
-        margin-top: 9px;
-        color: #2a2a2a;
-        font-family: helveticaRegular; }
-      .blog .blog-main .blog-post .who-post span {
-        margin: 0;
-        color: #696969;
-        font-family: helveticaRegular; }
-      .blog .blog-main .blog-post p {
-        color: #2a2a2a;
-        font-family: helveticaRegular; }
-      .blog .blog-main .blog-post img {
-        margin-top: 10px;
-        margin-bottom: 20px; }
-      .blog .blog-main .blog-post span {
-        color: #696969;
-        font-family: helveticaRegular; }
-      .blog .blog-main .blog-post em {
-        font-size: 1.2em;
-        display: block; }
-      .blog .blog-main .blog-post .img-float-right {
-        float: right;
-        padding-left: 20px;
-        padding-top: 0;
-        margin-top: 0; }
-      .blog .blog-main .blog-post .img-float-left {
-        float: left;
-        padding-right: 20px;
-        padding-top: 0;
-        margin-top: 0; }
-  .blog .blog-side {
-    text-align: right; }
-    .blog .blog-side h1 {
-      font-size: 2em;
-      font-family: helveticaThin;
-      color: #2a2a2a;
-      margin-bottom: 15px;
-      padding: 0; }
-    .blog .blog-side p {
+.top-banner-blog {
+  min-height: auto;
+  background: url(../img/new-bg-3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #fff;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  border-bottom: solid 1px #cacaca; }
+  .top-banner-blog .top-banner-inner-left h1 {
+    color: #2a2a2a;
+    -webkit-text-fill-color: #2a2a2a;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #fff;
+    font-family: helveticaMedium;
+    font-size: 4em;
+    padding: 20px 20px 0 20px; }
+  .top-banner-blog .top-banner-inner-left h2 {
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: #2a2a2a;
+    font-family: helveticaLight;
+    font-size: 2.2em;
+    padding: 0 20px 0 20px;
+    line-height: 40px; }
+
+.blog .blog-main {
+  padding-bottom: 60px; }
+  .blog .blog-main h1 a {
+    font-size: 1em;
+    text-align: left;
+    font-family: helveticaThin;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+    text-decoration: none; }
+  .blog .blog-main span {
+    font-family: helveticaThin; }
+  .blog .blog-main .blog-post-top {
+    padding-top: 60px; }
+  .blog .blog-main .blog-post {
+    padding-bottom: 0px; }
+    .blog .blog-main .blog-post .who-post .blog-circle {
+      width: 60px;
+      height: 60px;
+      -moz-border-radius: 30px;
+      -webkit-border-radius: 30px;
+      background-image: url(../img/Nic_on_holiday.png);
+      background-size: 60px auto;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      transition-duration: 1s; }
+    .blog .blog-main .blog-post .who-post p {
+      margin: 0;
+      margin-top: 9px;
       color: #2a2a2a;
       font-family: helveticaRegular;
-      padding: 10px 0 0 0;
-      margin: 0; }
-    .blog .blog-side span {
+      padding-left: 5px; }
+    .blog .blog-main .blog-post .who-post span {
+      margin: 0;
+      color: #696969;
+      font-family: helveticaRegular;
+      padding-left: 5px; }
+    .blog .blog-main .blog-post p {
+      color: #2a2a2a;
+      font-family: helveticaRegular; }
+    .blog .blog-main .blog-post img {
+      margin-top: 10px;
+      margin-bottom: 20px; }
+    .blog .blog-main .blog-post span {
       color: #696969;
       font-family: helveticaRegular; }
+    .blog .blog-main .blog-post em {
+      font-size: 1.2em;
+      display: block; }
+    .blog .blog-main .blog-post .img-float-right {
+      float: right;
+      padding-left: 20px;
+      padding-top: 0;
+      margin-top: 0; }
+    .blog .blog-main .blog-post .img-float-left {
+      float: left;
+      padding-right: 20px;
+      padding-top: 0;
+      margin-top: 0; }
+.blog .blog-side {
+  text-align: right; }
+  .blog .blog-side h1 {
+    font-size: 2em;
+    font-family: helveticaThin;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+    padding: 0; }
+  .blog .blog-side p {
+    color: #2a2a2a;
+    font-family: helveticaRegular;
+    padding: 10px 0 0 0;
+    margin: 0; }
+  .blog .blog-side span a {
+    color: #696969;
+    font-family: helveticaRegular;
+    text-decoration: underline; }
+.blog .page-select-large {
+  text-align: center;
+  padding-top: 30px; }
+.blog .page-select-small {
+  display: none; }
 
 @media (max-width: 1200px) {
   .pricing form {
     text-align: center; }
-    .pricing form #sites, .pricing form #feeds {
-      width: 50%; }
     .pricing form .customer {
       width: 70%; }
 
@@ -1342,31 +1379,9 @@ form {
     margin-left: auto;
     margin-right: auto; }
 
-  .benefits {
-    text-align: center; }
-    .benefits h1 {
-      padding-left: 0 !important;
-      display: block;
-      text-align: center; }
-    .benefits h2 {
-      padding-bottom: 15px; }
-    .benefits p {
-      padding-bottom: 10px; }
-    .benefits img {
-      margin: 0 auto; }
-    .benefits .benefits-inner {
-      text-align: center; }
-      .benefits .benefits-inner i {
-        display: block; }
-
   .features .features-inner h2 {
     padding-left: 10px;
-    padding-right: 10px; }
-
-  .profiles .profiles-inner h2 {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 20px; } }
+    padding-right: 10px; } }
 @media (max-width: 1000px) {
   .profile-select h1 {
     font-size: 1.2em !important; }
@@ -1521,6 +1536,12 @@ form {
     -mox-box-shadow: 0px 0px 0px 0px #558e28;
     -webkit-box-shadow: 0px 0px 0px 0px #558e28;
     box-shadow: 0px 0px 0px 0px #558e28; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .customers .customers-inner .qoute p {
+    padding: 50px; }
+  .customers .customers-inner .qoute .circle {
+    margin-bottom: 50px;
+    top: 90px; } }
 @media (max-width: 992px) {
   .customers-inner .customer-logos {
     text-align: center; }
@@ -1559,6 +1580,25 @@ form {
       display: none; }
     footer .footer-contact #email-text {
       padding-top: 0px; } }
+@media (min-width: 550px) and (max-width: 991px) {
+  .top-banner .top-banner-inner-right {
+    margin-top: 20px; }
+    .top-banner .top-banner-inner-right .video-wrapper {
+      position: relative;
+      padding-bottom: 28.125%;
+      /* 16:9 */
+      padding-top: 25px;
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .top-banner .top-banner-inner-right .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0px;
+      right: 0px;
+      margin: 0 auto;
+      max-width: 420px;
+      max-height: 236px; } }
 @media (max-width: 991px) {
   .ideal {
     margin-top: 20px; }
@@ -1574,16 +1614,55 @@ form {
     padding-bottom: 20px !important; }
 
   footer {
-    padding-top: 30px; }
+    padding-top: 50px !important; }
     footer .sub-footer {
-      margin-top: 30px; } }
+      margin-top: 50px !important; }
+
+  .benefits {
+    text-align: center; }
+    .benefits h1 {
+      padding-left: 0 !important;
+      display: block;
+      text-align: center; }
+    .benefits h2 {
+      padding-bottom: 15px; }
+    .benefits p {
+      padding-bottom: 10px; }
+    .benefits img {
+      margin: 0 auto; }
+    .benefits .benefits-inner {
+      text-align: center; }
+      .benefits .benefits-inner p {
+        padding-left: 0; }
+      .benefits .benefits-inner i {
+        display: block;
+        text-indent: 0;
+        top: 0;
+        left: 0; } }
+@media (min-width: 461px) and (max-width: 991px) {
+  .top-banner {
+    padding-bottom: 20px !important; }
+    .top-banner .top-banner-inner-right {
+      margin-top: 0 !important; } }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .profiles .profiles-inner h1 {
+    padding-bottom: 10px; }
+  .profiles .profiles-inner h2 {
+    padding-left: 30px !important;
+    padding-right: 30px !important; } }
 @media (max-width: 768px) {
   .navbar-sign-up {
     margin-left: 10px; }
 
   .navbar-log-in {
     margin-right: 0px;
-    margin-left: 20px; } }
+    margin-left: 20px; }
+
+  .profiles .profiles-inner h1 {
+    padding-bottom: 10px; }
+  .profiles .profiles-inner h2 {
+    padding-left: 0;
+    padding-right: 0; } }
 @media (max-width: 767px) {
   #bs-example-navbar-collapse-1 {
     background: #fff;
@@ -1609,6 +1688,9 @@ form {
   #pricingFooter {
     margin-bottom: 110px; } }
 @media (max-width: 750px) {
+  .customers-inner .qoute .circle {
+    top: 20px !important;
+    margin-bottom: -20px !important; }
   .customers-inner .customer-logos img {
     width: 40px;
     height: auto; }
@@ -1618,11 +1700,17 @@ form {
 
   .top-banner-inner-left h1 {
     font-size: 3.5em !important; } }
+@media (max-width: 600px) {
+  .page-select-large {
+    display: none; }
+
+  .page-select-small {
+    display: block !important;
+    text-align: center;
+    padding-top: 30px; } }
 @media (max-width: 650px) {
   .pricing form {
     text-align: center; }
-    .pricing form #sites, .pricing form #feeds {
-      width: 50%; }
     .pricing form .customer {
       width: 60%; }
 
@@ -1646,6 +1734,33 @@ form {
     padding-bottom: 0 !important; }
   .profile-select h2 {
     display: none; } }
+@media (max-width: 500px) {
+  .social {
+    padding-bottom: 30px; }
+    .social .social-inner {
+      margin: 0;
+      padding: 0; }
+      .social .social-inner h1 {
+        padding-top: 15px; }
+      .social .social-inner h2 {
+        display: block;
+        line-height: 20px;
+        padding: 10px;
+        margin: 0;
+        border-radius: 10px; }
+      .social .social-inner h3 {
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px; }
+      .social .social-inner .blog-1 {
+        padding: 20px 20px 10px 20px;
+        margin-bottom: 20px; }
+      .social .social-inner .blog-2 {
+        padding: 20px 20px 10px 20px;
+        margin-bottom: 0; }
+
+  .blog .blog-main .blog-post .img-float-right, .blog .blog-main .blog-post .img-float-left {
+    width: 100%; } }
 @media (min-width: 460px) {
   .log-in-collapse {
     display: none !important; }
@@ -1663,7 +1778,18 @@ form {
     margin-right: 0px !important; } }
 @media (min-width: 461px) and (max-width: 767px) {
   .navbar-sign-up, .navbar-log-in {
-    display: none; } }
+    display: none; }
+
+  .top-banner {
+    padding-top: 30px;
+    padding-bottom: 0px; }
+    .top-banner h1 {
+      margin-top: 30px !important;
+      margin-bottom: 20px;
+      padding: 0 !important; }
+    .top-banner h2 {
+      margin: 0 !important;
+      padding: 0 !important; } }
 @media (max-width: 460px) {
   .top-banner {
     padding-top: 30px;
@@ -1725,30 +1851,6 @@ form {
   .qoute p {
     padding: 50px 30px 30px 30px !important; }
 
-  .social {
-    padding-bottom: 30px; }
-    .social .social-inner {
-      margin: 0;
-      padding: 0; }
-      .social .social-inner h1 {
-        padding-top: 15px; }
-      .social .social-inner h2 {
-        display: block;
-        line-height: 20px;
-        padding: 10px;
-        margin: 0;
-        border-radius: 10px; }
-      .social .social-inner h3 {
-        padding: 10px;
-        margin-top: 20px;
-        border-radius: 10px; }
-      .social .social-inner .blog-1 {
-        padding: 20px 20px 10px 20px;
-        margin-bottom: 20px; }
-      .social .social-inner .blog-2 {
-        padding: 20px 20px 10px 20px;
-        margin-bottom: 0; }
-
   footer {
     padding-top: 30px; }
     footer .social-icon {
@@ -1757,41 +1859,126 @@ form {
       margin-top: 30px; }
       footer .sub-footer p {
         padding-bottom: 20px; } }
+@media (max-width: 445px) {
+  .the-team .team-copy {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
 @media (max-width: 400px) {
   .calculator-small p {
     font-size: 1em !important; }
 
   .pricing form {
     text-align: center; }
-    .pricing form #sites, .pricing form #feeds {
-      width: 80% !important; }
     .pricing form .customer {
       width: 80% !important; }
 
   .profile-select {
     padding-top: 70px !important; }
     .profile-select h1 {
-      display: none; } }
+      display: none; }
+
+  .top-banner-contact .top-banner-inner-left .contact-ed {
+    display: none; }
+  .top-banner-contact .top-banner-inner-left .contact-us {
+    display: block; } }
 @media (max-width: 300px) {
-  .profile-owner-solid {
+  .profile-select .profile-owner-solid {
     display: block;
-    width: 70px !important;
-    height: 70px !important;
+    width: 50px;
+    height: 50px;
     background: #558e28;
-    -moz-border-radius: 35px !important;
-    -webkit-border-radius: 35px !important;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
     background-image: url(../img/yourstest.png);
-    background-size: 50px 50px !important;
+    background-size: 35px 35px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     margin: 0 auto;
+    transition-duration: 1s; }
+  .profile-select .profile-owner-selected {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #558e28;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    background-image: url(../img/yoursWhite.png);
+    background-size: 35px 35px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    transition-duration: 1s; }
+  .profile-select .profile-service-provider-solid {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #558e28;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    background-image: url(../img/sptest.png);
+    background-size: 35px 35px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #558e28;
+    transition-duration: 1s; }
+  .profile-select .profile-service-provider-selected {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #558e28;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    background-image: url(../img/SPWhite.png);
+    background-size: 35px 35px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #558e28;
     transition-duration: 1s; } }
+@media (max-width: 282px) {
+  .social-icon {
+    display: block; } }
 @media (max-width: 272px) {
   .EnergyDeck-logo {
     width: 100px;
     height: auto; }
 
   .navbar-brand {
-    padding-top: 16px; } }
+    padding-top: 16px; }
+
+  .calculator-small {
+    display: none !important; }
+
+  .pricing form .inline-calculator {
+    margin-top: 50px;
+    display: block; }
+    .pricing form .inline-calculator p {
+      font-size: 1.2em;
+      font-family: helveticaThin;
+      color: #2a2a2a; }
+    .pricing form .inline-calculator i {
+      color: #558e28;
+      font-size: 2em; } }
+@media (max-width: 250px) {
+  .top-banner .top-banner-inner-left .ghost-button {
+    margin: 25px 0 0 0; }
+
+  .profiles .profiles-inner .ghost-button-go, .profiles .profiles-inner .ghost-button-learn {
+    padding: 10px;
+    width: auto; } }
+@media (max-width: 245px) {
+  .top-banner .top-banner-inner-left h1, .top-banner-about .top-banner-inner-left h1, .top-banner-contact .top-banner-inner-left h1, .top-banner-blog .top-banner-inner-left h1 {
+    font-size: 2.5em !important; }
+  .top-banner .top-banner-inner-left h2, .top-banner-about .top-banner-inner-left h2, .top-banner-contact .top-banner-inner-left h2, .top-banner-blog .top-banner-inner-left h2 {
+    font-size: 1.5em !important;
+    line-height: normal; }
+
+  .pricing form #sites, .pricing form #feeds {
+    width: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
