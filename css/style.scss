@@ -78,10 +78,82 @@ html { -webkit-font-smoothing: antialiased; }
 	text-align: right;
 }
 
-//TOP BANNER//////////////////////////////////////	
+//TOP BANNER//////////////////////////////////////
+.top-space {
+	margin-top: 40px;
+}
+.new-banner {
+	height: 600px;
+	background: url(../img/background/8.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	text-align: center;
+  	img {
+  		position: relative;
+  		top: 220px;
+  	}
+}
+.new-top {
+	background-color: #f6f7fc;
+	h1 {
+		   color: $colour4;
+			font-family: helveticaMedium;
+			font-size: 4em;
+			padding: 20px 20px 0 20px;
+		}
+		h2 {
+			color: $colour4;
+
+			font-family: helveticaMedium;
+			font-size: 2.5em;
+			padding: 0 20px 0 20px;
+			line-height: 40px;
+		}
+		.ghost-button {
+	  		display: inline-block;
+	  		width: 150px;
+	  		padding: 8px;
+	  		margin: 20px;
+	  		border-radius: 25px;
+	  		color: #fff;
+	  		text-align: center;
+	  		outline: none;
+	  		text-decoration: none;
+	  		font-family: helveticaLight;
+	  		font-size: 1.2em;
+	  		transition-duration: 1s;
+	  		background-color: $colour2;
+	  		border: solid 2px #fff;
+		}
+		.ghost-button:hover {
+			border: solid 2px $colour4;
+	  		background-color: $colour2;
+	  		transition-duration: 1s;
+	  		color: #fff;
+		}
+		.video-wrapper {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			padding-top: 25px;
+			height: 0;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		.video-wrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 80%;
+			height: 80%;
+			right: 0;
+			margin: 0 auto;
+		}
+}
 .top-banner {
 	min-height: auto;
-	background: url(../img/new-bg-3.jpg) no-repeat center center; 
+	background: url(../img/background/8.jpg) no-repeat center center; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -92,19 +164,14 @@ html { -webkit-font-smoothing: antialiased; }
   	border-bottom: solid 1px $border;
 	.top-banner-inner-left {
 		h1 {
-		   color: #fff;
-   			-webkit-text-fill-color: #fff;
-   			-webkit-text-stroke-width: 1.5px;
-   			-webkit-text-stroke-color: $colour4;
+		   color: #000;
 			font-family: helveticaMedium;
 			font-size: 4em;
 			padding: 20px 20px 0 20px;
 		}
 		h2 {
-			color: #fff;
-			-webkit-text-fill-color: #fff;
-   			-webkit-text-stroke-width: 1px;
-   			-webkit-text-stroke-color: $colour4;
+			color: #000;
+
 			font-family: helveticaMedium;
 			font-size: 2.5em;
 			padding: 0 20px 0 20px;
@@ -147,8 +214,10 @@ html { -webkit-font-smoothing: antialiased; }
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 100%;
-			height: 100%;
+			width: 80%;
+			height: 80%;
+			right: 0;
+			margin: 0 auto;
 		}
 	}
 }
@@ -1467,11 +1536,11 @@ form {
 .circle-contact-social {
 	display: block;
 	margin: 0 auto;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background: $colour4;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
     text-align: center;
     margin-top: 20px;
     img {
