@@ -1,0 +1,258 @@
+//Variables
+//------------------------------------------------------
+//Colours
+//Backgrounds
+$colour1: #3d9cbc; //blue
+$colour2: #558e28; //green
+$colour3: #696969; //grey
+$colour4: #2a2a2a; //dark grey
+$colour5: #e6e6e6; //very light grey
+$colour6: #cacaca; //medium grey
+//Accents
+$accent1: #54abc7; //bright blue
+$border: #cacaca; //medium grey
+//------------------------------------------------------
+//Spacing
+$sectionPadding: 20px;
+$section: 60px;
+//------------------------------------------------------
+//Fonts
+@font-face {
+    font-family: helveticaLight;
+    src: url(../fonts/HelveticaNeueLight.ttf);
+}
+@font-face {
+    font-family: helveticaThin;
+    src: url(../fonts/HelveticaNeueThin.ttf);
+}
+@font-face {
+    font-family: helveticaRegular;
+    src: url(../fonts/HelveticaNeue.ttf);
+}
+@font-face {
+    font-family: helveticaMedium;
+    src: url(../fonts/HelveticaNeueMedium.ttf);
+}
+@font-face {
+    font-family: helveticaBold;
+    src: url(../fonts/HelveticaNeueBold.ttf);
+    font-weight: bold;
+}
+
+html { -webkit-font-smoothing: antialiased; }
+//PRICING PAGE///
+.pricing-top {
+    background-color: #fff;
+}
+.pricing {
+    background-color: #fff;
+    .pricing-heading {
+    h1 {
+            display: inline-block;
+            font-size: 2em;
+            text-align: left;
+            font-family: helveticaLight;
+            color: $colour4;
+            position: relative;
+            bottom: 30px;
+            padding-left: 20px;
+        }
+        h2 {
+            font-size: 1em;
+            text-align: left;
+            font-family: helveticaRegular;
+            color: $colour4;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        .profile-pricing-owner {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background: $colour2;
+            -moz-border-radius: 40px;
+            -webkit-border-radius: 40px;
+            background-image: url(../img/yoursWhite.png);
+            background-size: 60px 60px;
+            background-position: 50% 60%;
+            background-repeat:no-repeat;   
+            margin: 0 auto;
+            transition-duration: 1s;
+        }
+        .profile-pricing-service-provider {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background: $colour2;
+            -moz-border-radius: 40px;
+            -webkit-border-radius: 40px;
+            background-image: url(../img/spWhite.png);
+            background-size: 60px 60px;
+            background-position: 50% 50%;
+            background-repeat:no-repeat;   
+            margin: 0 auto;
+            border-style: solid;
+            border-width: 2px;
+            border-color: $colour2;
+            transition-duration: 1s;
+        }
+    }
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        font-family: helveticaThin;
+        color: $colour4;
+        a {
+        text-decoration: none;
+        color: $colour4;
+        }
+    }
+    h2 {
+        font-size: 1.2em;
+        text-align: center;
+        font-family: helveticaThin;
+        color: $colour4;
+    }
+    .set-up-question {
+        padding-top: 10px;
+    }
+    .ok-btn {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .pricing-hr {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .form-heading {
+        margin-bottom: 30px;
+    }
+    .circle-pricing {
+        display: block;
+        width: 70px;
+        height: 70px;
+        background: $colour2;
+        -moz-border-radius: 35px;
+        -webkit-border-radius: 35px;
+       text-align: center;
+       line-height: 70px;
+       font-size: 40px;
+       color: #fff;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-family: helveticaThin;
+    }
+    .stop-calculator {
+        background-color: #fff;
+        height: 30px;
+    }
+    .inline-calculator {
+        display: none;
+    }   
+    .calculator {
+        width: 314.969px !important;
+        background-color: $colour5;
+        border: 1px solid $colour4;
+        border-radius: 25px;
+        .overview {
+            text-align: center;
+            i {
+                font-size: 3em;
+                color: $colour2;
+            }
+            p {
+                font-family: helveticaRegular;
+                font-size: 1.2em;
+                color: $colour4;
+            }
+        }
+        .overview-result {
+            text-align: center;
+            p {
+            font-family: helveticaRegular;
+            font-size: 1.2em;
+            color: $colour2;
+            }
+        }
+        .total-cost {
+            h1 { 
+                color: $colour4;
+                border-radius: 0 0 0 0;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-top-color: $colour2;
+                margin-bottom: 0;
+                font-size: 2em;
+            }
+            h2 {
+                color: $colour4;
+                border-radius: 0 0 0 0;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin-top: 0;
+                font-size: 1.2em;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.calculator-small {
+    padding-top: 5px;
+    border-top: solid 2px $colour2;
+    background-color: $colour4;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    text-align: center;
+    i {
+        color: $colour2;
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+        font-family: helveticaRegular;
+        color: $colour2;
+    }
+    .output {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+form {
+    label {
+        display: block;
+    }
+    text-align: center;
+    #sites, #feeds {
+        //width: 20%;
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #sites {
+        display: inline-block;
+    }
+    #feeds {
+        display: inline-block;
+    }
+    .customer {
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    #submit-btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #submit-btn-service-provider {
+        margin-top: 15px;
+        margin-bottom: 60px;
+    }
+}

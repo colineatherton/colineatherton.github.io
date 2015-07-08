@@ -66,12 +66,12 @@ html {
   background-color: #2a2a2a; }
   .new-top h1 {
     color: #fff;
-    font-family: helveticaMedium;
+    font-family: helveticaThin;
     font-size: 4em;
     padding: 20px 20px 0 20px; }
   .new-top h2 {
     color: #fff;
-    font-family: helveticaMedium;
+    font-family: helveticaThin;
     font-size: 2.5em;
     padding: 0 20px 0 20px;
     line-height: 40px; }
@@ -114,7 +114,7 @@ html {
 
 .top-banner {
   min-height: auto;
-  background: url(../img/background/8.jpg) no-repeat center center;
+  background: url(../img/background/15-crop.jpg) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -127,18 +127,18 @@ html {
     color: #000;
     font-family: helveticaMedium;
     font-size: 4em;
-    padding: 20px 20px 0 20px; }
+    padding: 20px 20px 0 0px; }
   .top-banner .top-banner-inner-left h2 {
     color: #000;
     font-family: helveticaMedium;
     font-size: 2.5em;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 0px;
     line-height: 40px; }
   .top-banner .top-banner-inner-left .ghost-button {
     display: inline-block;
     width: 150px;
     padding: 8px;
-    margin: 20px;
+    margin-top: 20px;
     border-radius: 25px;
     color: #fff;
     text-align: center;
@@ -155,7 +155,7 @@ html {
     transition-duration: 1s;
     color: #fff; }
   .top-banner .top-banner-inner-right {
-    margin-top: 20px; }
+    margin-top: 12px; }
     .top-banner .top-banner-inner-right .video-wrapper {
       position: relative;
       padding-bottom: 56.25%;
@@ -168,10 +168,21 @@ html {
       position: absolute;
       top: 0;
       left: 0;
-      width: 80%;
-      height: 80%;
+      width: 96%;
+      height: 96%;
       right: 0;
       margin: 0 auto; }
+
+.benefits-triangle {
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 40px solid #cacaca;
+  position: relative;
+  top: -2px; }
 
 .triangle {
   display: block;
@@ -699,14 +710,17 @@ footer {
       padding-top: 30px;
       padding-bottom: 30px; }
 
+#yoursSection, #SPSection {
+  cursor: pointer; }
+
 .profile-select {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
   background-color: #2a2a2a;
   border-bottom-style: solid;
-  border-bottom-width: 4px;
-  border-bottom-color: #558e28; }
+  border-bottom-width: 2px;
+  border-bottom-color: #cacaca; }
   .profile-select .line {
     background-color: transparent;
     height: 2px;
@@ -796,7 +810,45 @@ footer {
   transition-duration: 1s; }
 
 .benefits-top {
-  background-color: #fff; }
+  background-color: #fff;
+  padding-bottom: 30px; }
+  .benefits-top .profile-benefits-owner {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #558e28;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    background-image: url(../img/yoursWhite.png);
+    background-size: 60px 60px;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    transition-duration: 1s; }
+  .benefits-top .profile-benefits-service-provider {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #558e28;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    background-image: url(../img/spWhite.png);
+    background-size: 60px 60px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #558e28;
+    transition-duration: 1s; }
+  .benefits-top h1 {
+    display: inline-block;
+    font-size: 2em;
+    text-align: left;
+    font-family: helveticaLight;
+    padding-left: 20px;
+    position: relative;
+    bottom: 25px; }
 
 .benefits-circle {
   width: 80px;
@@ -839,7 +891,7 @@ footer {
   border-right: 27px solid transparent;
   border-top: 36px solid #2a2a2a;
   position: relative;
-  top: -44px;
+  top: -42px;
   padding-bottom: 0;
   margin-bottom: 0; }
 
@@ -1090,8 +1142,8 @@ form {
     margin-bottom: 60px; }
 
 .top-banner-about {
-  min-height: auto;
-  background: url(../img/new-bg-3.jpg) no-repeat center center;
+  height: 320px;
+  background: url(../img/background/23.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1102,17 +1154,11 @@ form {
   border-bottom: solid 1px #cacaca; }
   .top-banner-about .top-banner-inner-left h1 {
     color: #2a2a2a;
-    -webkit-text-fill-color: #2a2a2a;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #fff;
     font-family: helveticaMedium;
     font-size: 4em;
     padding: 20px 20px 0 20px; }
   .top-banner-about .top-banner-inner-left h2 {
     color: #2a2a2a;
-    -webkit-text-fill-color: #fff;
-    -webkit-text-stroke-width: 0.25px;
-    -webkit-text-stroke-color: #2a2a2a;
     font-family: helveticaLight;
     font-size: 2.2em;
     padding: 0 20px 0 20px;
@@ -1120,9 +1166,11 @@ form {
 
 .about-page {
   padding-top: 40px;
-  border-bottom: solid 1px #cacaca; }
+  border-bottom: solid 1px #cacaca;
+  background-color: #e6e6e6; }
   .about-page p {
-    font-family: helveticaRegular; }
+    font-family: helveticaRegular;
+    padding-top: 50px; }
   .about-page h1 {
     font-size: 2em;
     text-align: center;
@@ -1135,15 +1183,15 @@ form {
     color: #000;
     padding-bottom: 20px; }
   .about-page .about-us {
-    padding-top: 50px; }
+    padding-top: 0px; }
   .about-page .mission {
     font-size: 1.2em;
     text-align: center;
     font-family: helveticaLight;
-    color: #fff; }
+    color: #2a2a2a; }
     .about-page .mission p {
-      padding: 50px;
-      background-color: #cacaca;
+      padding: 50px 30px 30px 40px;
+      background-color: #cfdec4;
       text-align: left;
       border-radius: 15px;
       position: relative;
@@ -1153,12 +1201,12 @@ form {
       display: block;
       width: 90px;
       height: 90px;
-      background: #e6e6e6;
+      background: #558e28;
       border-style: solid;
       border-width: 3px;
       -moz-border-radius: 45px;
       -webkit-border-radius: 45px;
-      border-color: #fff;
+      border-color: #e6e6e6;
       text-align: center;
       line-height: 85px;
       margin: 0 auto;
@@ -1167,7 +1215,7 @@ form {
       .about-page .mission .mission-circle img {
         text-align: center; }
   .about-page .awards {
-    padding-bottom: 20px; }
+    padding-bottom: 50px; }
     .about-page .awards p {
       padding-top: 20px;
       text-align: center;
@@ -1202,10 +1250,11 @@ form {
     background-repeat: no-repeat; }
 
 .the-team {
-  background-color: #e6e6e6;
+  background-color: #fff;
   padding-bottom: 30px; }
   .the-team p {
-    text-align: center; }
+    text-align: center;
+    padding-top: 0; }
   .the-team .team-copy {
     padding-left: 20px;
     padding-right: 20px;
@@ -1215,11 +1264,11 @@ form {
   text-align: center;
   padding-top: 75px;
   padding-bottom: 75px;
-  background-color: #e3e3e3; }
+  background-color: #fff; }
 
 .top-banner-contact {
-  min-height: auto;
-  background: url(../img/new-bg-3.jpg) no-repeat center center;
+  height: 320px;
+  background: url(../img/IDEAL.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1232,17 +1281,11 @@ form {
     display: none; }
   .top-banner-contact .top-banner-inner-left h1 {
     color: #2a2a2a;
-    -webkit-text-fill-color: #2a2a2a;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #fff;
     font-family: helveticaMedium;
     font-size: 4em;
     padding: 20px 20px 0 20px; }
   .top-banner-contact .top-banner-inner-left h2 {
     color: #2a2a2a;
-    -webkit-text-fill-color: #fff;
-    -webkit-text-stroke-width: 0.25px;
-    -webkit-text-stroke-color: #2a2a2a;
     font-family: helveticaLight;
     font-size: 2.2em;
     padding: 0 20px 0 20px;
@@ -1252,7 +1295,9 @@ form {
   position: relative;
   padding-bottom: 75%;
   height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .google-maps iframe {
   position: absolute;
@@ -1261,25 +1306,23 @@ form {
   width: 100% !important;
   height: 100% !important; }
 
-.contact-page {
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  .contact-page h1 {
-    font-size: 2em;
-    font-family: helveticaLight;
-    color: #2a2a2a;
-    text-align: center; }
-  .contact-page h2 {
-    font-size: 1.2em;
-    text-align: left;
-    font-family: helveticaRegular;
-    color: #2a2a2a;
-    text-align: center; }
-  .contact-page p {
-    font-size: 1em;
-    font-family: helveticaLight;
-    color: #2a2a2a;
-    text-align: center; }
+.contact-page h1 {
+  font-size: 1.2em;
+  font-family: helveticaLight;
+  color: #2a2a2a;
+  text-align: left;
+  font-weight: bold; }
+.contact-page h2 {
+  font-size: 1.2em;
+  text-align: left;
+  font-family: helveticaRegular;
+  color: #2a2a2a;
+  text-align: center; }
+.contact-page p {
+  font-size: 1em;
+  font-family: helveticaLight;
+  color: #2a2a2a;
+  text-align: left; }
 
 .test1 {
   background-color: #558e28; }
@@ -1322,8 +1365,8 @@ form {
   margin-bottom: 30px; }
 
 .top-banner-blog {
-  min-height: auto;
-  background: url(../img/new-bg-3.jpg) no-repeat center center;
+  height: 320px;
+  background: url(../img/background/21.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1333,18 +1376,11 @@ form {
   padding-top: 40px;
   border-bottom: solid 1px #cacaca; }
   .top-banner-blog .top-banner-inner-left h1 {
-    color: #2a2a2a;
-    -webkit-text-fill-color: #2a2a2a;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #fff;
-    font-family: helveticaMedium;
-    font-size: 4em;
-    padding: 20px 20px 0 20px; }
-  .top-banner-blog .top-banner-inner-left h2 {
     color: #fff;
-    -webkit-text-fill-color: #fff;
-    -webkit-text-stroke-width: 0.25px;
-    -webkit-text-stroke-color: #2a2a2a;
+    font-family: helveticaMedium;
+    font-size: 4em; }
+  .top-banner-blog .top-banner-inner-left h2 {
+    color: #2a2a2a;
     font-family: helveticaLight;
     font-size: 2.2em;
     padding: 0 20px 0 20px;
@@ -1444,7 +1480,13 @@ form {
 
   .features .features-inner h2 {
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+
+  .top-banner .top-banner-inner-left h2 {
+    font-size: 1.5em;
+    line-height: normal; }
+  .top-banner .top-banner-inner-left .ghost-button {
+    margin-top: 10px; } }
 @media (max-width: 1000px) {
   .profile-select h1 {
     font-size: 1.2em !important; }
@@ -1609,15 +1651,10 @@ form {
   .customers-inner .customer-logos {
     text-align: center; }
 
-  .top-banner .top-banner-inner-left {
-    text-align: center; }
-    .top-banner .top-banner-inner-left h1 {
-      text-align: left; }
-    .top-banner .top-banner-inner-left h2 {
-      text-align: left; }
-    .top-banner .top-banner-inner-left .ghost-button {
-      margin-right: 30px;
-      margin-left: 30px; }
+  .top-banner .top-banner-inner-left h1 {
+    text-align: left; }
+  .top-banner .top-banner-inner-left h2 {
+    text-align: left; }
 
   footer .footer-brand {
     text-align: center; }
@@ -1643,25 +1680,6 @@ form {
       display: none; }
     footer .footer-contact #email-text {
       padding-top: 0px; } }
-@media (min-width: 550px) and (max-width: 991px) {
-  .top-banner .top-banner-inner-right {
-    margin-top: 20px; }
-    .top-banner .top-banner-inner-right .video-wrapper {
-      position: relative;
-      padding-bottom: 28.125%;
-      /* 16:9 */
-      padding-top: 25px;
-      height: auto;
-      margin-top: 10px;
-      margin-bottom: 10px; }
-    .top-banner .top-banner-inner-right .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0px;
-      right: 0px;
-      margin: 0 auto;
-      max-width: 420px;
-      max-height: 236px; } }
 @media (max-width: 991px) {
   .ideal {
     margin-top: 20px; }
@@ -1701,12 +1719,15 @@ form {
         display: block;
         text-indent: 0;
         top: 0;
-        left: 0; } }
+        left: 0; }
+
+  .about-page p {
+    padding-top: 0; } }
 @media (min-width: 461px) and (max-width: 991px) {
   .top-banner {
-    padding-bottom: 20px !important; }
+    padding-bottom: 40px !important; }
     .top-banner .top-banner-inner-right {
-      margin-top: 0 !important; } }
+      margin-top: 40px !important; } }
 @media (min-width: 768px) and (max-width: 1200px) {
   .profiles .profiles-inner h1 {
     padding-bottom: 10px; }
@@ -1749,7 +1770,10 @@ form {
     display: none; }
 
   #pricingFooter {
-    margin-bottom: 110px; } }
+    margin-bottom: 110px; }
+
+  .contact-page p, .contact-page h1 {
+    text-align: center; } }
 @media (max-width: 750px) {
   .customers-inner .qoute .circle {
     top: 20px !important;
@@ -1852,7 +1876,9 @@ form {
       padding: 0 !important; }
     .top-banner h2 {
       margin: 0 !important;
-      padding: 0 !important; } }
+      padding: 0 0 20px 0 !important; }
+    .top-banner .video-wrapper {
+      margin: 0px !important; } }
 @media (max-width: 460px) {
   .top-banner {
     padding-top: 30px;
