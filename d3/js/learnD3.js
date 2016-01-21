@@ -1,4 +1,4 @@
-d3.select("#someDiv").style("border", "5px darkgrey dashed");
+d3.select("#someDiv").style("border", "50px darkgrey dashed");
 // style for appearance
 d3.select("#someDiv").attr("id", "newID");
 // attribute for id and class
