@@ -4,3 +4,5 @@ d3.select("#someDiv").attr("id", "newID");
 // attribute for id and class
 d3.select("#someCheckbox").property("checked", true);
 // property for state
+d3.select("#someCheckbox").html("here's some different content");
+// html for inner html
